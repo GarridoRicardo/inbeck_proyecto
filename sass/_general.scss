@@ -1,0 +1,99 @@
+/*APLICANDO SASS AL PROYECTO....................................................*/
+
+/*VARIABLES DE TIPOGRAFIA Y COLORES...............*/
+$colort0: white;
+$colort1: black ;
+$estfuente: normal;
+$famfuente1: 'Montserrat', sans-serif;
+$famfuente2: 'Opens Sans', sans-serif;
+$interlineado: 1em;
+$anchofuente1: 400;
+$textnegrita: 800;
+$alintext: center;
+$ancho1: 100vw;
+$ancho2: 100vw*0.80;
+$alto1: 100vh;
+$alto2: $alto1/2;
+
+/*MAPS de Colores BG*/
+$listabg:(
+   bg0:#042A2B,
+   bg1:#095b5d,
+   bg2:#45818E,
+   bg3:rgba(47, 204, 224, 0.952),
+   bg4:rgba(192, 219, 223, 0.952),
+   bg5: transparent,
+   );
+
+$colorbg0: map-get($listabg, bg0);
+$colorbg1: map-get($listabg, bg1);
+$colorbg2: map-get($listabg, bg2);
+$colorbg3: map-get($listabg, bg3);
+$colorbg4: map-get($listabg, bg4);
+$colorbg5: map-get($listabg, bg5);
+
+
+
+/*TIPOGRAFIA A USAR...............*/
+@media only screen and (max-width: 767px){
+
+/*APLICO ANIDACION EN TITULOS............*/
+    .titulos{
+        color:$colort0; 
+        font-weight: $anchofuente1;
+        font-family:$famfuente1;
+        text-align: $alintext;
+        line-height: $interlineado;
+        z-index: 4;
+            p{
+                font-size: 10px;
+                line-height: 25px;
+                word-spacing: 5px;
+                margin: 1px;
+                padding: 5px
+            }
+            .description{
+                font-weight: $textnegrita;
+                font-size: 10px;
+                font-family: $famfuente2;
+                line-height: 2rem;
+                word-spacing: 5px;
+                letter-spacing: 5px;
+            }
+           }
+ /*Se aplica un Bucle al modificador de titulos*/          
+        @for $i from 1 through 3 {
+            .titulos--h#{$i}{
+                font-size: 3rem/$i;
+            }
+        }
+
+}
+
+
+@media only screen and (min-width: 768px){
+/*APLICO ANIDACION EN TITULOS............*/
+    .titulos{
+        color:$colort0; 
+        font-weight: $anchofuente1;
+        font-family:$famfuente1;
+        text-align: $alintext;
+        line-height: $interlineado;
+        z-index: 4;   
+ 
+         p{
+             font-size: 16px;
+             line-height: 25px;
+             word-spacing: 5px;
+             margin: 1px;
+             padding: 5px
+         }
+
+        }
+/*Se aplica un Bucle al modificador de titulos*/
+        @for $i from 1 through 3 {
+            .titulos--h#{$i}{
+                font-size: 4rem/$i;
+            }
+        }
+    } 

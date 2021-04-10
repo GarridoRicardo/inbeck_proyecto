@@ -1,0 +1,170 @@
+/*APLICANDO SASS-OPERACIONES...............*/
+/*VARIABLES DE TIPOGRAFIA Y COLORES...............*/
+$colort0: white;
+$colort1: black ;
+$estfuente: normal;
+$famfuente1: 'Montserrat', sans-serif;
+$famfuente2: 'Opens Sans', sans-serif;
+$interlineado: 1em;
+$anchofuente1: 400;
+$textnegrita: 800;
+$alintext: center;
+$ancho1: 100vw;
+$ancho2: 100vw*0.80;
+$alto1: 100vh;
+$alto2: $alto1/3;
+
+/*MAPS de Colores BG*/
+$listabg:(
+   bg0:#042A2B,
+   bg1:#095b5d,
+   bg2:#45818E,
+   bg3:rgba(47, 204, 224, 0.952),
+   bg4:rgba(192, 219, 223, 0.952),
+   bg5: transparent,
+   );
+
+$colorbg0: map-get($listabg, bg0);
+$colorbg1: map-get($listabg, bg1);
+$colorbg2: map-get($listabg, bg2);
+$colorbg3: map-get($listabg, bg3);
+$colorbg4: map-get($listabg, bg4);
+$colorbg5: map-get($listabg, bg5);
+
+/*USANDO MIXIN...............*/
+@mixin texto($alto, $interlineado, $fuente) {
+    font-size: $alto;
+    line-height: $interlineado;
+    font-family: $fuente;    
+}
+/*Contenedor de Seccion Nuestra Historia*/
+    .nh-content{
+        background-image: url("../image/Acerca De/aereo.jpg");
+        background-repeat:no-repeat;
+        background-position:center;
+        background-size: cover;
+        position:relative;
+        height: $alto1*0.8;
+        width: $ancho1;
+        z-index: 1;
+        align-items: center;
+        align-content: center;
+    }
+    .nh-content::before {
+        content: '';
+        position: absolute;
+        left:0;
+        top:0;
+        height: $alto1*0.8;
+        width: $ancho1;
+        background-color:rgb(161, 169, 192);
+        z-index: -1;
+        opacity: 0.35;
+    }
+/*Contenedor de Titulo*/
+    .nh-title{
+        height: auto;
+        position:relative;
+        padding: 30px 0px 5px ;
+        text-align: center;
+        h1{
+            font-size: 30px;
+    }
+}
+/*Contenedor de Parrafo*/
+    .nh-parrafo{
+        height: auto;
+        width: $ancho1;
+        padding: 25px;
+                      
+        p{
+            @include texto(16px,30px,'Montserrat'sans-serif);
+            letter-spacing: 1px;
+            text-align:justify;
+        }
+    }
+
+/*Media Queris para modificar el parrafo a medida que cambia el ancho*/
+@media only screen and (min-width: 576px) and (max-width: 768px){
+
+    .nh-parrafo{
+        height: auto;
+        width: $ancho1;
+        padding: 25px;
+         /*Ingreso el mixin*/             
+        p{
+            @include texto(14px,25px,'Montserrat'sans-serif);
+            letter-spacing: 1px;
+            text-align:justify;
+        }
+    }
+}
+
+@media only screen and (max-width: 575px){
+
+    .nh-parrafo{
+        height: auto;
+        width: $ancho1;
+        padding: 5px;
+          /*Ingreso el mixin*/                        
+        p{
+            @include texto(12px,18px,'Montserrat'sans-serif);
+            letter-spacing: 1px;
+            text-align:justify;
+        }
+    }
+}
+
+/*CONDICIONAL y EXTEND*/
+/*VARIABLE*/            
+$fondo-mvv: color1;
+/*EXTEND*/ 
+%mvv-descripcion {
+    display: grid;
+    padding: 15px;
+    height:$alto2;
+    width: $ancho1;
+    @if ($fondo-mvv == color1) {
+        background-color: antiquewhite;
+    }@else if ($fondo-mvv == color2){
+        background-color: aquamarine;
+    }@else {
+        background-color: pink;
+    }
+       
+     h3{
+     padding: 3px 15px;
+     }
+     p{
+         padding: 3px 5px;
+         text-align: left;
+         font-size: 16px;
+     }
+     ul li{
+         line-height: 25px;
+         width: $ancho1;
+     }
+}
+/*Contenedor de Mision Vision y Valores*/ 
+.mvv-content{
+    align-items: center;
+    justify-items: center;
+    background-image: none;
+    height: $alto2;
+    width: $ancho1;
+    z-index: 1;
+}
+/*Mision Contenido*/ 
+.m-content{
+    @extend %mvv-descripcion;
+}
+/*Vision Contenido*/ 
+.vi-content{
+    @extend %mvv-descripcion;
+}
+/*Valores Contenido*/ 
+.va-content{
+   @extend %mvv-descripcion;
+}
+
+

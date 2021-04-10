@@ -1,0 +1,80 @@
+/*SECCION 7 - FOOTER*/
+
+.pieDePagina p{
+    color: $colort1;
+    text-align: left;
+    font-weight: 500;
+    font-size: 8px;
+    font-family:$famfuente1;
+    justify-items: center;
+    align-items: center;
+   
+}
+.pieDePagina{
+    justify-content: center;
+    height: 50vh;
+    width: 100vw;
+    justify-items: center;
+    margin: 10px 0px;
+    align-items: center;
+}
+
+.contenedorFinal{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.imageLogo{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 30px;
+    img{
+        width: 180px;
+    }
+}
+
+.imageCorp{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-size: contain;
+    margin:5px;
+    img{
+        width: 270px;
+}
+}
+
+.parrafoFooter h6{
+    display: flex;
+    flex-direction: row;
+    color:$colort1;
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    font-family:$famfuente1;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+
+/*Estilos de Redes en el footer*/
+
+.redInferior{
+    display:flex;
+    flex-flow: row wrap;
+    list-style:none;
+    margin: 1px;
+    padding: 1px;
+    justify-content: center;
+}
+
+.contenedorRedinf li{
+    padding: 10px;
+}
+
+.politica{
+    color:$colort1;
+    margin: 25px 0px 5px;
+    position: relative;
+    text-align: center;
+}
