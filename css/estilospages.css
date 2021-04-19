@@ -338,8 +338,8 @@
           flex: 1;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
 .botones {
@@ -350,6 +350,9 @@
       -ms-flex: 1;
           flex: 1;
   list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .botones a {
@@ -534,7 +537,7 @@
   background-position: center;
   background-size: cover;
   position: relative;
-  height: 70vh;
+  height: auto;
   z-index: 1;
   height: 80vh;
   width: 100vw;
@@ -602,22 +605,22 @@
     color: black;
     font-weight: normal;
     font-family: "Montserrat", sans-serif;
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 35px;
     letter-spacing: 1px;
     padding: 10px;
   }
   .botonNos a {
-    font-size: 10px;
-    letter-spacing: 1px;
-    margin: 4px 5px;
-    padding: 4px 10px;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin: 8px 10px;
+    padding: 8px 20px;
   }
   .botonNos:hover a {
-    font-size: 10px;
-    letter-spacing: 1px;
-    margin: 4px 5px;
-    padding: 4px 10px;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin: 8px 10px;
+    padding: 8px 20px;
   }
   .tituloServicios h3 {
     margin-top: 1px;
@@ -723,25 +726,25 @@
     font-size: 14px;
   }
   .parrafoTrabaje {
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 35px;
     letter-spacing: 1px;
-    padding: 30px;
+    padding: 20px;
   }
   .parrafoTrabaje p {
     text-align: justify;
   }
   .envieCV a {
-    font-size: 10px;
-    letter-spacing: 1px;
-    margin: 4px 5px;
-    padding: 4px 10px;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin: 8px 10px;
+    padding: 8px 20px;
   }
   .envieCV:hover a {
-    font-size: 10px;
-    letter-spacing: 1px;
-    margin: 4px 5px;
-    padding: 4px 10px;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin: 8px 10px;
+    padding: 8px 20px;
   }
 }
 
