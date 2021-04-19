@@ -1,36 +1,4 @@
 /*APLICANDO SASS-OPERACIONES...............*/
-/*VARIABLES DE TIPOGRAFIA Y COLORES...............*/
-$colort0: white;
-$colort1: black ;
-$estfuente: normal;
-$famfuente1: 'Montserrat', sans-serif;
-$famfuente2: 'Opens Sans', sans-serif;
-$interlineado: 1em;
-$anchofuente1: 400;
-$textnegrita: 800;
-$alintext: center;
-$ancho1: 100vw;
-$ancho2: 100vw*0.80;
-$alto1: 100vh;
-$alto2: $alto1/3;
-
-/*MAPS de Colores BG*/
-$listabg:(
-   bg0:#042A2B,
-   bg1:#095b5d,
-   bg2:#45818E,
-   bg3:rgba(47, 204, 224, 0.952),
-   bg4:rgba(192, 219, 223, 0.952),
-   bg5: transparent,
-   );
-
-$colorbg0: map-get($listabg, bg0);
-$colorbg1: map-get($listabg, bg1);
-$colorbg2: map-get($listabg, bg2);
-$colorbg3: map-get($listabg, bg3);
-$colorbg4: map-get($listabg, bg4);
-$colorbg5: map-get($listabg, bg5);
-
 /*USANDO MIXIN...............*/
 @mixin texto($alto, $interlineado, $fuente) {
     font-size: $alto;
@@ -39,7 +7,7 @@ $colorbg5: map-get($listabg, bg5);
 }
 /*Contenedor de Seccion Nuestra Historia*/
     .nh-content{
-        background-image: url("../image/Acerca De/aereo.jpg");
+        background-image: url("../image/acercade/aereo.jpg");
         background-repeat:no-repeat;
         background-position:center;
         background-size: cover;
@@ -121,8 +89,8 @@ $fondo-mvv: color1;
 /*EXTEND*/ 
 %mvv-descripcion {
     display: grid;
-    padding: 15px;
-    height:$alto2;
+    padding: 5px;
+    height:auto;
     width: $ancho1;
     @if ($fondo-mvv == color1) {
         background-color: antiquewhite;
@@ -147,10 +115,11 @@ $fondo-mvv: color1;
 }
 /*Contenedor de Mision Vision y Valores*/ 
 .mvv-content{
-    align-items: center;
+    display: grid;
+    align-items: flex-start;
     justify-items: center;
     background-image: none;
-    height: $alto2;
+    height: auto;
     width: $ancho1;
     z-index: 1;
 }

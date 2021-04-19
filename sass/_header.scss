@@ -49,7 +49,7 @@ $colorbg5: map-get($listabg, bg5);
     position: sticky;
     top: 0px;
     z-index: 100;
-    background-image: linear-gradient(to top, $colorbg2,$colorbg1, $colorbg0);
+    background-image: linear-gradient(to top, $colorbg3,#458c8e, #096063);
     width: $ancho1;
     align-items: center;
 }
@@ -132,11 +132,14 @@ $colorbg5: map-get($listabg, bg5);
 }
 
 .menu-bg:hover{
-    background-color: $colorbg4;
+    background-color: $colorbg3;
+    box-shadow: 3px 3px 20px black ;
+    
 }
 
 .masMenu-bg a:hover {
-    background-color: $colorbg4;
+    background-color: $colorbg3;
+    box-shadow: 3px 3px 20px black ;
 }
 
 /*ESTILOS PARA EL SUBMENU*/
@@ -155,7 +158,10 @@ $colorbg5: map-get($listabg, bg5);
             padding: 0 10px;
         }
     }
-
+.btn-buscar{
+    color: $colort1;
+    border: $colort1 solid 1px;
+}
 
 /*HEADER*/
 /*APLICO MEDIA QUERIS EN HEADER DESDE CEL A TABLETS............*/
@@ -171,7 +177,7 @@ $colorbg5: map-get($listabg, bg5);
     
         .menu li a{
             color: $colort0;
-            font-size: 10px;
+            font-size: 14px;
             font-family: $famfuente1;
             text-decoration: none;
             padding: 3px 25px;

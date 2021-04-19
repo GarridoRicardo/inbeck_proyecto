@@ -11,12 +11,14 @@
    
 }
 .pieDePagina{
+    position: relative;
     justify-content: center;
     height: 50vh;
     width: 100vw;
     justify-items: center;
     margin: 10px 0px;
     align-items: center;
+    z-index: 1;
 }
 
 .contenedorFinal{

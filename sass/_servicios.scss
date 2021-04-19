@@ -1,0 +1,21 @@
+/*APLICANDO SASS-OPERACIONES...............*/
+/*USANDO MIXIN...............*/
+@mixin texto($alto, $interlineado, $fuente) {
+    font-size: $alto;
+    line-height: $interlineado;
+    font-family: $fuente;    
+}
+/*Contenedor de Seccion Servicios*/
+    .s-contenedor{
+        display: grid;
+        background-color: $colorbg4;
+        z-index: 1;
+        align-items: center;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+        h1{
+            text-align: center;
+        }
+    }
+ 
