@@ -16,7 +16,7 @@
 		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
 	<!--Nuestro CSS-->
-	<link rel="stylesheet" type="text/css" href="../css/estilospages.css">
+	<link rel="stylesheet" type="text/css" href="../sass/estilospages.css">
 	<link rel="icon" href="../image/Logos/logo.png" alt="Logo Favicon">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -86,103 +86,123 @@
 		</div>
 	</header>
 
-	<section style="background-color: #45818E">
-		<!--Fondo-->
+	<!--Comienza el Contenedor de Contacto-->
+	<div class="c-contenedor">
+		<!--Titulo Principal de la Pagina-->
+		<div>
+			<h1>Contacto</h1>
+		</div>
 
-		<h1 style="font-size: 2rem;">Contacto</h1>
-
-	</section>
-	<section>
-		<center>
-			<h2>Contáctenos</h2>
+		<div class="">
 			<form>
-				<label for="Nombre"></label>
-				<input type="text" id="Nombre" placeholder="Nombre" value="" required>
-				<br>
-				<br>
-				<label for="Apellido"></label>
-				<input type="text" id="Apellido" placeholder="Apellido" value="" required>
-				<br>
-				<br>
-				<select name="text">
-					<option value="Ingenieria">Ingenieria</option>
-					<option value="Topografia">Topografia</option>
-					<option value="Detección">Detección</option>
-					<option value="Otros">Otros</option>
-				</select>
-				<br>
-				<br>
-				<label for="email"></label>
-				<input type="email" id="email" placeholder="Correo Electrónico">
-				<br>
-				<br>
-				<label for="mensaje"></label>
-				<textarea name="mensaje" cols="30" rows="10" minlength="5" maxlength="200"
-					placeholder="Mensaje o Comentario"></textarea>
-				<br>
-				<br>
-				<label for="Acepto">Acepto condiciones de política de privacidad del sitio web:
-					www.Inbeck.com.ar</label>
-				<input type="checkbox" id="Acepto" name=acepta value=1 required="">
-				<br>
-				<br>
-				<input type="submit" name="Enviar Formulario" />
-				<input type="reset" name="Limpiar Formulario" />
-
+				<div class="form-group">
+					<label for="formGroupExampleInput">Nombre Completo</label>
+					<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre">
+				</div>
+				<div class="form-group">
+					<label for="formGroupExampleInput2">Apellido Completo</label>
+					<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Apellido">
+				</div>
 			</form>
 
-		</center>
+		</div>
+	</div>
 
-	<!--Sección 7 Pie de Pagina-->
-	<footer class="pieDePagina">
-		<div class="container contenedorFinal">
-			<div class="row">
-				<div class="col-md-6 ">
-					<!--Logo Inbeck-->
-					<div class="imageLogo">
-						<img src="../image/logos/logo_2020.png" alt="Logo InBeck">
-					</div>
-					<!--Datos de Ubiacion-->
-					<div class="parrafoFooter">
-						<h6 >Avenida Mariano Moreno 336</h6>
-						
-						<h6>Plaza Huincul - Provincia del Neuquén</h6>
-					</div>
-					<!--redes sociales-->
-					<div class="contenedorRedinf">
+		<section>
+			<center>
+				<h2>Contáctenos</h2>
+				<form>
+					<label for="Nombre"></label>
+					<input type="text" id="Nombre" placeholder="Nombre" value="" required>
+					<br>
+					<br>
+					<label for="Apellido"></label>
+					<input type="text" id="Apellido" placeholder="Apellido" value="" required>
+					<br>
+					<br>
+					<select name="text">
+						<option value="Ingenieria">Ingenieria</option>
+						<option value="Topografia">Topografia</option>
+						<option value="Detección">Detección</option>
+						<option value="Otros">Otros</option>
+					</select>
+					<br>
+					<br>
+					<label for="email"></label>
+					<input type="email" id="email" placeholder="Correo Electrónico">
+					<br>
+					<br>
+					<label for="mensaje"></label>
+					<textarea name="mensaje" cols="30" rows="10" minlength="5" maxlength="200"
+						placeholder="Mensaje o Comentario"></textarea>
+					<br>
+					<br>
+					<label for="Acepto">Acepto condiciones de política de privacidad del sitio web:
+						www.Inbeck.com.ar</label>
+					<input type="checkbox" id="Acepto" name=acepta value=1 required="">
+					<br>
+					<br>
+					<input type="submit" name="Enviar Formulario" />
+					<input type="reset" name="Limpiar Formulario" />
 
-						<ul class="redInferior">
-							<li><a href="https://www.facebook.com/Ingenieria.Topografia.Deteccion" target="_blank"><img
-										style="width: 20px" src="../image/iconos/facebook.png" alt="Facebook"></a></li>
-							<li><a href="https://www.instagram.com/inbeck_srl/" target="_blank"><img style="width: 20px"
-										src="../image/iconos/instagram.png" alt="Instagram"></a> </li>
-							<li><a href="https://www.linkedin.com/company/inbeck/" target="_blank"><img
-										style="width: 20px" src="../image/iconos/linkedin.png" alt="LinkedIn"></a></li>
-							<li><a href="https://g.page/inbeck-s-r-l-?share" target="_blank"><img style="width: 20px"
-										src="../image/iconos/search.png" alt="Google"></a></li>
-						</ul>
+				</form>
+
+			</center>
+
+			<!--Sección 7 Pie de Pagina-->
+			<footer class="pieDePagina">
+				<div class="container contenedorFinal">
+					<div class="row">
+						<div class="col-md-6 ">
+							<!--Logo Inbeck-->
+							<div class="imageLogo">
+								<img src="../image/logos/logo_2020.png" alt="Logo InBeck">
+							</div>
+							<!--Datos de Ubiacion-->
+							<div class="parrafoFooter">
+								<h6>Avenida Mariano Moreno 336</h6>
+
+								<h6>Plaza Huincul - Provincia del Neuquén</h6>
+							</div>
+							<!--redes sociales-->
+							<div class="contenedorRedinf">
+
+								<ul class="redInferior">
+									<li><a href="https://www.facebook.com/Ingenieria.Topografia.Deteccion"
+											target="_blank"><img style="width: 20px" src="../image/iconos/facebook.png"
+												alt="Facebook"></a></li>
+									<li><a href="https://www.instagram.com/inbeck_srl/" target="_blank"><img
+												style="width: 20px" src="../image/iconos/instagram.png"
+												alt="Instagram"></a> </li>
+									<li><a href="https://www.linkedin.com/company/inbeck/" target="_blank"><img
+												style="width: 20px" src="../image/iconos/linkedin.png"
+												alt="LinkedIn"></a></li>
+									<li><a href="https://g.page/inbeck-s-r-l-?share" target="_blank"><img
+												style="width: 20px" src="../image/iconos/search.png" alt="Google"></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<!--Imagen Corporativa de InBeck-->
+							<div class="imageCorp">
+								<img src="../image/inicio/footer.jpg" alt="Imagen Corporativa de la Empresa">
+							</div>
+
+						</div>
 					</div>
 				</div>
-				<div class="col-md-6">
-					<!--Imagen Corporativa de InBeck-->
-					<div class="imageCorp">
-						<img src="../image/inicio/footer.jpg" alt="Imagen Corporativa de la Empresa">
-					</div>
-
-				</div>
-			</div>
-		</div>
-		</div>
+	</div>
 
 
-		<!--Politica de Privacidad-->
-		<div class="politica">
-			<h6>Copyright © 2021 InBeck SRL | RGarrido</h6>
+	<!--Politica de Privacidad-->
+	<div class="politica">
+		<h6>Copyright © 2021 InBeck SRL | RGarrido</h6>
 
-			<h6>Politica de Privacidad</h6>
+		<h6>Politica de Privacidad</h6>
 
-			<h6>Aviso Legal</h6>
-		</div>
+		<h6>Aviso Legal</h6>
+	</div>
 	</footer>
 
 
