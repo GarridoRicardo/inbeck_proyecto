@@ -46,12 +46,14 @@
 .contenedorBotones{
     display: flex;
     flex: 1;
-    flex-direction: row;
+    flex-flow: row wrap;
+ 
 }
 .botones{ 
     display: flex;
     flex:1;
     list-style: none;
+    justify-content: center;
    
           a{
             text-decoration: none;
@@ -200,7 +202,7 @@ margin-left: 1%;
     background-position: center;
     background-size: cover;
     position: relative;
-    height: 70vh;
+    height: auto;
     z-index: 1;
     height: 80vh;
     width: $ancho1;
@@ -269,22 +271,22 @@ margin-left: 1%;
     color: $colort1;
     font-weight: normal;
     font-family: $famfuente1;
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 35px;
     letter-spacing: 1px;
     padding: 10px;
 }
 .botonNos a{ 
-    font-size: 10px;
-    letter-spacing: 1px;
-    margin: 4px 5px;
-    padding: 4px 10px;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin: 8px 10px;
+    padding: 8px 20px;
 }
 .botonNos:hover a{
-    font-size: 10px;
-    letter-spacing: 1px;
-    margin: 4px 5px;
-    padding: 4px 10px;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin: 8px 10px;
+    padding: 8px 20px;
 }
 
 .tituloServicios h3	{
@@ -388,26 +390,26 @@ margin-left: 1%;
 }
 .parrafoTrabaje{
     
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 35px;
     letter-spacing: 1px;
-    padding: 30px;
+    padding: 20px;
     p{
         text-align: justify;
     }
 }
 
 .envieCV a{ 
-font-size: 10px;
-letter-spacing: 1px;
-margin: 4px 5px;
-padding: 4px 10px;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin: 8px 10px;
+    padding: 8px 20px;
 }
 .envieCV:hover a{
-font-size: 10px;
-letter-spacing: 1px;
-margin: 4px 5px;
-padding: 4px 10px;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin: 8px 10px;
+    padding: 8px 20px;
 }
 }
 	
