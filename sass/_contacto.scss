@@ -9,13 +9,21 @@
     .c-contenedor{
         display: grid;
         background-color: $colorbg4;
+        justify-content: center;
+        justify-items: center;
         z-index: 1;
-        align-items: center;
-        align-content: center;
-        margin: 0;
+         margin: 0;
         padding: 0;
-        h1{
+         h1{
             text-align: center;
         }
     }
- 
+ .formulario{
+     width: 50vw;
+     height: auto;
+     form{
+        align-content: center;
+        justify-items: center;
+     }
+
+ }
