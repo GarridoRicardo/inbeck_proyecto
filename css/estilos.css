@@ -1,0 +1,987 @@
+
+/*HOJA DE ESTILOS PROPIA....................................................*/
+*{
+	margin: 0;
+	padding: 0;
+}
+/*APLICO MEDIA QUERIS DE TIPOGRAFIA GENERAL............*/
+
+@media only screen and (min-width: 320px){
+		/*Titulos Principales*/
+		h1{
+			color: white; 
+			font-weight: 400;
+			font-size: 2.5rem;
+			font-family:'Montserrat', sans-serif;
+			text-align: center;
+			line-height: 1em;
+			z-index: 4;
+		}
+	
+		/*Subtitulos*/
+		h2{
+			color: white; 
+			font-weight: 400;
+			font-size: 1rem;
+			font-family:'Montserrat', sans-serif;
+			text-align: center;
+			line-height:1em;
+			z-index: 4;
+		}
+		
+		/*Titulos de Secciones*/
+		h3{	
+			color: black; 
+			font-style: normal;
+			font-weight: 400;
+			font-size: 12px;
+			font-family: 'Montserrat', sans-serif;
+			text-align: center;
+			z-index: 4;
+		}
+		
+		/*Cuerpo de Secciones*/
+		p{	
+			color: white; 
+			font-weight: 400;
+			font-size: 8px;
+			font-family:'Montserrat', sans-serif;
+			text-align: center;
+			line-height: 25px;
+			word-spacing: 5px;
+			text-align: center;
+			margin: 1px;
+			padding: 5px
+		}
+		
+		/*Descripciones especiales*/
+		.description{
+			color: white; 
+			font-weight: 600;
+			font-size: 10px;
+			font-family: 'Open Sans', sans-serif;
+			text-align: center;
+			line-height: 2rem;
+			word-spacing: 5px;
+			letter-spacing: 5px;
+			}
+}
+/*FIN MEDIA QUERIS EN TIPOGRAFIA GENERAL............*/
+
+
+/*APLICO MEDIA QUERIS EN TIPOGRAFIA PARA PANTALLAS DESKTOP............*/
+@media only screen and (min-width: 768px) {
+	h1{
+		font-size: 4rem;
+	}
+	h2{
+		font-size: 2rem;
+	}
+	h3{	
+		font-size: 1rem;
+	}
+	p{	
+		font-size: 1rem;
+	}
+	.description{
+	font-size: 14px;
+	}
+}
+/*FIN MEDIA QUERIS TIPOGRAFIA GENERAL PANTALLAS DESKTOP............*/
+
+
+/*HEADER*/
+
+/*APLICO MEDIA QUERIS EN HEADER PARA DESKTOP............*/
+
+@media only screen and (min-width: 320px) {
+
+/*CONTENEDOR DEL HEADER............*/
+	.cabeceraContainer{
+		display: flex;
+		flex-direction: column;
+		flex-flow: column wrap;
+		flex: 1;
+		background-color: #45818E;
+		position: sticky;
+		top: 0px;
+		width: 100vw;
+		z-index: 100;
+
+	}
+	
+	/*CONTENEDOR DE LOGO*/
+	.logoInbeck{
+		display: block;
+		margin: 10px 0px;
+		padding: 5px 0px 10px 60px;
+		opacity: 0.75;
+	}
+
+    	
+	/*ESTILOS DE REDES SOCIALES EN MENU SUPERIOR*/
+    .contenedorRed{
+        display: flex;
+		flex: 1;
+		flex-flow: column wrap;
+		position: sticky;
+		z-index: 1000;
+    }
+	.redSuperior{
+		display:flex;
+		flex-flow: row wrap;
+		list-style:none;
+		font-family: 'Montserrat', sans-serif;
+		justify-content: flex-end;
+		margin: 1px;
+		padding: 1px;
+		font-weight: 800;
+        position: fixed;
+		top: 1px;
+		right: 1px;
+	}
+	
+	.redSuperior li a{
+		text-decoration: none;
+		padding: 5px;
+		font-size: 10px;
+		color:white;
+		font-weight: normal;
+	}
+	
+	.redSuperior :hover{
+		background-color: rgb(40, 171, 189);
+	}
+	
+	
+	/*CONTENEDOR DE MENU DE NAVEGACION*/
+	
+	.menuContenedor{
+		display: flex;
+		flex: 1;
+		flex-flow: column wrap;
+		position: sticky;
+		z-index: 1000;
+		margin: 0px;
+		justify-items: center;
+		align-items: center;
+		justify-content: center;
+		
+	}
+
+	/*ESTILOS DE MENU DE NAVEGACION*/
+	.menu{
+		display: flex;
+		flex-flow: row wrap;
+		flex: 1;
+		list-style:none;
+		margin: 1px;
+		position:sticky;
+		z-index: 1000;
+		width: 100vw;
+		justify-items: center;
+		align-items: center;
+		justify-content: center;
+	}
+	.menu li a{
+		color: white;
+		font-style:normal;
+		font-weight: normal;
+		font-size: 16px;
+		font-family: 'Montserrat', sans-serif;
+		text-decoration: none;
+		padding: 1px;
+	}
+	
+	.menu li:hover>.submenu{
+		display: block;
+	}
+	
+	.menu :hover{
+		background-color: rgb(40, 171, 189);
+	}
+
+	
+	/*ESTILOS PARA EL SUBMENU*/
+	
+	.submenu{
+		list-style: none;
+		display: block;
+		display: none;
+		background-color: transparent;
+		position: fixed;
+		color:rgb(28, 77, 151);
+		font-style:normal;
+		font-weight: normal;
+		font-size: 10px;
+		font-family: 'Montserrat', sans-serif;
+		text-decoration: none;
+		}
+	
+	.submenu li{
+		margin: 10px 0;
+		padding: 0 10px;
+	}
+}
+/*FIN DE MEDIA QUERUS HEADER PARA DESKTOP*/
+
+/*APLICO MEDIA QUERIS EN HEADER DESDE CEL A TABLETS............*/
+@media only screen and (min-width: 320px) and (max-width:767px) {
+
+	/*CONTENEDOR DEL LOGO*/
+	.logoInbeck{
+		display: block;
+		margin: 1px;
+		padding: 1px;
+		opacity: 0.75;
+	}
+
+	.menu li a{
+		color: white;
+		font-style:normal;
+		font-weight: normal;
+		font-size: 10px;
+		font-family: 'Montserrat', sans-serif;
+		text-decoration: none;
+		padding: 3px 25px;
+	}
+}
+/*FIN DE MEDIA QUERIS EN HEADER DESDE CEL A TABLETS............*/
+
+/*SECCION 1 - PORTADA DE BIENVENIDA*/
+
+/*CONTENEDOR DE PORTADA*/
+	.portadaContenedor {
+		background-image: url("../image/Inicio/Portada.jpg");
+		background-position: center;
+		background-size: cover;
+		margin-top: 0px;
+		height: 100vh;
+		width: 100vw;
+		position:relative;
+		z-index: -1;
+	}
+
+	.portadaContenedor::before {
+		content: '';
+		position: absolute;
+		left:0;
+		top:0;
+		width: 100%;
+		height: 100%;
+		background-color:#042A2B;
+		z-index: -1;
+		opacity: 0.5;
+	}
+	
+	/*CONTENEDOR DEL CONTENIDO DE LA SECCION*/
+	.home{
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+		position: relative;
+		top: 0px;
+		height: 100vh;
+		width: 100vw;
+		z-index: 2;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.home div a{
+		text-decoration: none;
+	}
+	
+	/*ESTILOS PARA LOS BOTONES DE PORTADA*/
+	.contenedorBotones{
+		display: flex;
+		flex: 1;
+		flex-direction: row;
+	}
+	.botones { 
+		display: flex;
+		flex:1;
+		list-style: none;
+		margin: 5px;
+		padding: 5px;
+	
+	}
+	.botones li{
+		margin: 10px 15px;
+		padding: 10px 25px;
+	}
+
+	.botones a{
+        text-decoration: none;
+        color: white;
+        border: solid 1px white ;
+		font-family:'Montserrat', sans-serif;
+		font-weight: 500;
+		font-size: 12px;
+		letter-spacing: 3px;
+		margin: 8px 10px;
+		padding: 8px 20px;
+		
+	}
+	
+	.botones:hover a{
+		color: white;
+		background-color:#095b5d;
+		font-family:'Montserrat', sans-serif;
+		font-weight: 500;
+		font-size: 12px;
+		letter-spacing: 3px;
+		margin: 8px 10px;
+		padding: 8px 20px;
+		border: solid 1px white ;
+	}
+
+/*SECCION 2 - RESUMEN DE LOS SERVICIOS*/
+
+/*CONTENEDOR DE RESUMEN*/	
+.resume{
+	height: auto;
+	width: auto;
+}
+
+/*ESTILOS AL CAROUSEL*/	
+.resume .carousel-item{
+	background-position: center;
+	background-size:cover;
+	position: relative;
+	z-index: 1;
+}
+
+.resume .carousel-item .active h5{
+	animation: fadeInLeft 0.3s ease forwards;
+}
+
+.resume .carousel-item .active p{
+	animation: fadeInLeft 0.3s ease forwards;
+}
+
+.container h5{
+	font-size: 35px;
+}
+.carrusel{
+height: auto;
+width: auto;
+margin-right: 1%;
+margin-left: 1%;
+}
+
+.carousel-item img {
+    height: auto;
+    object-fit: cover;
+}
+
+.carousel-indicators{
+	margin-bottom: 30px;
+}
+@keyframes fadeInLeft{
+	0%{
+		opacity: 0;
+		transform: translateX(-10px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(10px);
+	}
+}
+@keyframes fadeInRight{
+	0%{
+		opacity: 0;
+		transform: translateX(-10px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(10px);
+	}
+}
+
+
+.tituloServicios{
+		margin: 30px ;
+	}
+
+.tituloServicios h3{
+		font-size: 25px ;
+	}
+
+/*APLICANDO MEDIA QUERIS AL CAROUSEL*/	
+
+@media(max-width: 767px){
+	.resume .carousel-control-next-icon, 
+	.resume .carousel-control-prev-icon{
+		display: none;
+	}
+	.resumew .carousel-indicators li{
+		height: 60px;
+		width: 60px;
+	}
+
+  }
+  
+
+/*SECCION 3 - RESUMEN DE ACERCA DE*/	
+
+/*CONTENEDOR DE RESUMEN ACERCA DE*/	
+	
+	.contenedorNosotros{
+		display: grid;
+		grid-template-areas:
+		"CuerpoNos"
+		"botonNos";
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 0.5fr;
+		background-color: #53919c;
+		align-items: center;
+		justify-items: center;
+		row-gap: 5px;
+		background-image: url("../image/Acerca De/aereo.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		height: 90vh;
+	}
+
+	/*ESTILOS DE BOTON DE NOSOTROS*/	
+	
+	div#botonNos{
+		grid-area: botonNos;
+	}
+	
+	div#CuerpoNos{
+		grid-area: CuerpoNos;
+	}
+	.tituloNosotros{
+		color: black;
+		font-weight: 500;
+		font-size: 14px;
+		font-family: 'Montserrat', sans-serif;
+		margin-top: 30px;
+		text-transform: uppercase;
+	}
+	#botonNos a{
+        text-decoration: none;
+        color: white;
+        border: solid 1px white ;
+		font-family:'Montserrat', sans-serif;
+		font-weight: 500;
+		font-size: 12px;
+		letter-spacing: 3px;
+		margin: 8px 10px;
+		padding: 8px 20px;
+	}
+	#botonNos:hover a{
+		color: white;
+		background-color:#095b5d;
+		font-family:'Montserrat', sans-serif;
+		font-weight: 500;
+		font-size: 12px;
+		letter-spacing: 3px;
+		margin: 8px 10px;
+		padding: 8px 20px;
+		border: solid 1px white ;
+	}
+
+	.margenNosotros{
+		margin: 10px ;
+		padding: 1px;
+	}
+	
+/*APLICANDO MEDIA QUERIS A RESUMEN NOSOTROS*/	
+    @media only screen and (min-width: 320px) and (max-width:767px) {
+   
+.contenedorNosotros p{
+     font-size: 14px;
+     line-height: 30px;
+     letter-spacing: 1px;
+}
+
+.tituloServicios h3	{
+		margin-top: 5px ;
+		font-size: 14px;
+}
+}
+
+/*SECCION 4 - TRABAJE CON NOSOTROS*/	
+
+/*CONTENEDOR DE TRABAJE CON NOSOTROS*/	
+
+	.tituloTrabaje{
+		color: black;
+		font-weight: 400;
+		font-size: 16px;
+		font-family: 'Montserrat', sans-serif;
+		margin-top: 30px;
+		text-transform: uppercase;
+	}
+	.portadaTrabaje{
+		background-image: url("../image/Inicio/Trabaje\ con\ nosotros.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-color:#47455F;
+		opacity: 0.80;
+		padding: 10px;
+		height: 70vh;
+	}
+	
+	.contenedorTrabaje{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 20% auto 30%;
+		align-items: center;
+		justify-items: center;
+		row-gap: 5px;
+		padding: 10px;
+		height: 50vh;
+	}
+	
+	.envieCV a{
+        text-decoration: none;
+        color: white;
+        border: solid 1px white ;
+		font-family:'Montserrat', sans-serif;
+		font-weight: 400;
+		font-size: 12px;
+		letter-spacing: 3px;
+		margin: 8px 10px;
+		padding: 8px 20px;
+		text-transform: uppercase;
+	}
+	.envieCV:hover a{
+		color: white;
+		background-color:#095b5d;
+		font-family:'Montserrat', sans-serif;
+		font-weight: 500;
+		font-size: 12px;
+		letter-spacing: 3px;
+		margin: 8px 10px;
+		padding: 8px 20px;
+		border: solid 1px white ;
+		text-transform: uppercase;
+	}
+	.parrafoTrabaje p{
+        font-size: 14px;
+        line-height: 30px;
+        letter-spacing: 1px;
+	}
+
+
+/*SECCION 5 - NUESTROS CLIENTES*/
+
+/*CONTENEDOR DE NUESTROS CLIENTES*/
+	
+	.tituloClientes h3{
+		color: black;
+		font-weight: 400;
+		font-size: 16px;
+		font-family: 'Montserrat', sans-serif;
+		margin-top: 30px;
+		text-transform: uppercase;
+	}
+
+	.contenedorClientes{
+		display: grid;
+		grid-template-areas:
+		"imageYPF imagePP imagePAE imageWll"
+		"imageEqui imageSEI imageFH imageELE";
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		background-color: white;
+		align-items: center;
+		justify-items: center;
+		row-gap: 1px;
+		width: 100vw;
+		height: 100vh;
+	}
+	
+	#tituloClientes{
+		margin-top: 15px ;
+	}
+	section#imageYPF{
+		grid-area: imageYPF;
+	}
+	section#imagePP{
+		grid-area: imagePP;
+	}
+	section#imagePAE{
+		grid-area: imagePAE;
+	}
+	
+	section#imageWll{
+		grid-area: imageWll;
+	}
+	
+	section#imageEqui{
+		grid-area: imageEqui;
+	}
+	
+	section#imageSEI{
+		grid-area: imageSEI;
+	}
+	
+	section#imageFH{
+		grid-area: imageFH;
+	}
+	
+	section#imageELE{
+		grid-area: imageELE;
+	}
+	
+	.contenedorClientes div img{
+		margin: 0px;
+		padding: 0px;
+		width: 170px;
+		align-items: center;
+	}
+
+	
+/*APLICANDO MEDIA QUERIS A NUESTROS CLIENTES - RESPONSIVE CELULARES*/
+
+    @media only screen and (min-width: 320px) and (max-width:480px) {
+        .contenedorClientes{
+            display: grid;
+            grid-template-areas:
+            "tituloClientes tituloClientes"
+            "imageYPF imagePP "
+            "imagePAE imageWll"
+            "imageEqui imageSEI"
+            "imageFH imageELE";
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            background-color: white;
+            align-items: center;
+            justify-items: center;
+            row-gap: 1px;
+            width: 100vw;
+            height: 100vh;
+        }
+        
+        section div#tituloClientes{
+            grid-area: tituloClientes;
+        }
+        section#imageYPF{
+            grid-area: imageYPF;
+        }
+        section#imagePP{
+            grid-area: imagePP;
+        }
+        section#imagePAE{
+            grid-area: imagePAE;
+        }
+        
+        section#imageWll{
+            grid-area: imageWll;
+        }
+        
+        section#imageEqui{
+            grid-area: imageEqui;
+        }
+        
+        section#imageSEI{
+            grid-area: imageSEI;
+        }
+        
+        section#imageFH{
+            grid-area: imageFH;
+        }
+        
+        section#imageELE{
+            grid-area: imageELE;
+        }
+        
+        .contenedorClientes div img{
+            margin: 0px;
+            padding: 0px;
+            width: 100px;
+            align-items: center;
+        }
+    }
+/*FIN DE MEDIA QUERIS*/	
+
+/*APLICANDO MEDIA QUERIS A NUESTROS CLIENTES - RESPONSIVE TABLETS*/
+
+@media only screen and (min-width: 481px) and (max-width:767px) {
+        .contenedorClientes{
+            display: grid;
+            grid-template-areas:
+            "imageYPF imagePP imagePAE"
+            "imageWll imageEqui imageSEI"
+            "imageFH imageELE imageELE";
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            background-color: white;
+            align-items: center;
+            justify-items: center;
+            row-gap: 1px;
+            width: 100vw;
+            height: 100vh;
+        }
+        
+        section div#tituloClientes{
+            grid-area: tituloClientes;
+        }
+        section#imageYPF{
+            grid-area: imageYPF;
+        }
+        section#imagePP{
+            grid-area: imagePP;
+        }
+        section#imagePAE{
+            grid-area: imagePAE;
+        }
+        
+        section#imageWll{
+            grid-area: imageWll;
+        }
+        
+        section#imageEqui{
+            grid-area: imageEqui;
+        }
+        
+        section#imageSEI{
+            grid-area: imageSEI;
+        }
+        
+        section#imageFH{
+            grid-area: imageFH;
+        }
+        
+        section#imageELE{
+            grid-area: imageELE;
+        }
+        
+        .contenedorClientes div img{
+            margin: 0px;
+            padding: 0px;
+            width: 100px;
+            align-items: center;
+        }
+    }
+/*FIN DE MEDIA QUERIS*/	
+
+
+	/*SECCION 6 - INFORMACION UTIL*/
+	
+    .portadaContacto{
+        background-image: url("../image/Contacto/negocio1.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            opacity: 0.99;
+            padding: 10px;
+            height: 50vh;
+            z-index: -1;
+		 }
+
+	.contenedorInfo{
+		display: flex;
+		align-items: center;
+		justify-items: center;
+		row-gap: 1px;
+        padding-left: 25px;
+        z-index: 1;
+	}
+	.contenedorInfo div{
+		justify-items: center;
+		justify-content: center;
+	}
+	
+	section#tituloInfo{
+		grid-area: tituloInfo;
+	}
+	
+	section#listaContacto{
+		grid-area: listaContacto;
+	}
+	section#mapaUbicacion{
+		grid-area: mapaUbicacion;
+	}
+	
+	#mapaUbicacion{
+		margin: 15px;
+	}
+	#tituloInfo{
+		margin-top: 5px;   
+	}
+    #tituloInfo h3{
+		text-transform: uppercase;
+        font-weight: 600;  
+	}
+	
+	.Contacto li{
+		color: rgb(255, 255, 255); 
+		font-weight: 600;
+		font-size: 10px;
+		font-family:'Montserrat', sans-serif;
+		line-height: 20px;
+		text-decoration: none;
+		letter-spacing: 2px;
+		list-style: none;
+		padding: 1px 3px;
+        z-index: 1;
+        background-color:#095b5d;
+        
+	}
+
+	
+/*SECCION 7 - FOOTER*/
+	
+	.pieDePagina p{
+    	color: black;
+		text-align: left;
+		font-weight: 500;
+		font-size: 8px;
+		font-family:'Montserrat', sans-serif;
+		justify-items: center;
+		align-items: center;
+
+		
+	}
+	.pieDePagina{
+		justify-content: center;
+		height: 50vh;
+		width: 100vw;
+		justify-items: center;
+		margin: 10px 0px;
+		align-items: center;
+	}
+	
+	.contenedorFinal{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.imageLogo{
+		display: flex;
+		align-content: center;
+		justify-content: center;
+		margin-top: 30px;
+	}
+
+	.imageLogo img{
+		width: 180px;
+	}
+
+	.imageCorp{
+		display: flex;
+		align-content: center;
+		justify-content: center;
+		background-size: contain;
+		margin:5px;
+	}
+	.imageCorp img{
+		width: 270px;
+	}
+	
+	.parrafoFooter h6{
+		display: flex;
+		flex-direction: row;
+		color: black;
+		text-align: center;
+		font-weight: 400;
+		font-size: 12px;
+		font-family:'Montserrat', sans-serif;
+		justify-content: center;
+		margin-top: 5px;
+	}
+
+	
+	/*Estilos de Redes en el footer*/
+
+	.redInferior{
+		display:flex;
+		flex-flow: row wrap;
+		list-style:none;
+		margin: 1px;
+		padding: 1px;
+		justify-content: center;
+	}
+	
+	.contenedorRedinf li{
+		padding: 10px;
+	}
+	
+
+	.información ul li{
+		display: flex;
+		text-decoration: none;
+		color: black;
+		font-weight: 400;
+		font-size: 16px;
+		font-family: 'Montserrat', sans-serif;
+		padding: 5px;
+	}
+
+	.politica{
+		color: black;
+		margin: 25px 0px 5px;
+		position: relative;
+		text-align: center;
+	}
+
+/* APLICANDO BOOSTRAPS CON JS EN OTRAS SECCIONES
+PAGINA DEL BLOG*/
+
+.tituloBlog{
+	background-color: #45818E;
+	background-size: cover;
+	margin:5px;
+	padding: 5px;
+}
+
+.tituloBlog h3{
+	color: white;
+	background-color: #45818E;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	
+}
+
+.portadaBlog{
+	background-color: #042A2B;
+	margin: 5px;
+	position: relative;
+	background-size: cover;
+
+}
+
+.portadaBlog::before {
+	content: '';
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background-color:#042A2B;
+	z-index: -1;
+	opacity: 0.5;
+	margin: 0;
+}
+
+.articulo p{
+	text-align: justify;
+	color: black;
+}
+
+.videoExterno {
+	display: flex;
+	flex: 1;
+	justify-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-size: cover;
+	margin: 10px;
+	
+
+}
+.videoExterno iframe{
+	width: 100vw;
+}
+
