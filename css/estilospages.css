@@ -1201,6 +1201,37 @@ div #imagePP:hover {
   text-align: center;
 }
 
+/*ESTILOS CONTACTO*/
+/*APLICO MIXIN...............*/
+/*Contenedor de Seccion Servicios*/
+.c-contenedor {
+  display: -ms-grid;
+  display: grid;
+  background-color: rgba(192, 219, 223, 0.952);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.c-contenedor h1 {
+  text-align: center;
+}
+
+.formulario {
+  width: 50vw;
+  height: auto;
+}
+
+.formulario form {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  justify-items: center;
+}
+
 /*SECCION 7 - FOOTER*/
 .pieDePagina p {
   color: black;
