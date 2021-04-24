@@ -38,7 +38,7 @@ $colorbg5: map-get($listabg, bg5);
     flex-flow: column wrap;
     flex: 1;
     background-color: #042A2B;
-    position: sticky;
+    position:fixed;
     top: 0px;
     width: $ancho1;
     z-index: 100;
@@ -46,7 +46,7 @@ $colorbg5: map-get($listabg, bg5);
 }
 /*MODIFICADOR DEL HEADER............*/
 .cabeceraContainer__modificado{
-    position: sticky;
+    position: fixed;
     top: 0px;
     z-index: 100;
     background-image: linear-gradient(to top, $colorbg3,#458c8e, #096063);
@@ -67,7 +67,7 @@ $colorbg5: map-get($listabg, bg5);
     display: flex;
     flex: 1;
     flex-flow: column wrap;
-    position: sticky;
+    position: fixed;
     z-index: 5; 
 }
 
@@ -79,9 +79,9 @@ $colorbg5: map-get($listabg, bg5);
     justify-content: flex-end;
     margin: 1px;
     padding: 1px;
-    position: fixed;
-    top: 0px;
-    right: 0px;
+    position:fixed;
+    top: 10px;
+    right: 10px;
     a{
         padding: 5px;
     }

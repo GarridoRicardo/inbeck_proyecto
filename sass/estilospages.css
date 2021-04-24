@@ -15,8 +15,7 @@
       -ms-flex: 1;
           flex: 1;
   background-color: #042A2B;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0px;
   width: 100vw;
   z-index: 100;
@@ -25,8 +24,7 @@
 
 /*MODIFICADOR DEL HEADER............*/
 .cabeceraContainer__modificado {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0px;
   z-index: 100;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 204, 224, 0.952)), color-stop(#458c8e), to(#096063));
@@ -56,9 +54,9 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   z-index: 5;
+  background-color: #095b5d;
 }
 
 /*ANIDACION EN ESTILO DE REDES*/
@@ -77,8 +75,8 @@
   margin: 1px;
   padding: 1px;
   position: fixed;
-  top: 0px;
-  right: 0px;
+  top: 10px;
+  right: 10px;
 }
 
 .redSuperior a {
