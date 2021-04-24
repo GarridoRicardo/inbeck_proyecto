@@ -3,8 +3,10 @@
 //Portada de Sección
 .portadaContenedor {
     background-image: url("../image/inicio/portada.jpg");
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     margin-top: 0px;
     height: $alto1;
     width: $ancho1;
