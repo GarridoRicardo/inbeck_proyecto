@@ -34,33 +34,31 @@ $colorbg5: map-get($listabg, bg5);
 /*CONTENEDOR DEL HEADER............*/
 .cabeceraContainer{
     display: flex;
-    flex-direction: column;
-    flex-flow: column wrap;
-    flex: 1;
-    position:absolute;
+    flex-flow: row wrap;
     top: 0px;
     width: $ancho1;
     z-index: 100;
     opacity: 1;
+    height: auto;
 }
 
 
 
 /*CONTENEDOR DE LOGO*/
 .logoInbeck{
-    display: block;
+    display: flex;
     padding: 5px 0px 0px 60px;
     opacity: 0.75;
-    width: 100vh;
+    width: 50%;
 }
  
 /*ESTILOS DE REDES SOCIALES EN MENU SUPERIOR*/
 .contenedorRed{
     display: flex;
-    flex: 1;
-    flex-flow: column wrap;
-    position: relative;
     z-index: 5; 
+    height: auto;
+    width: 50%;
+    justify-content: flex-end;
 }
 
 /*ANIDACION EN ESTILO DE REDES*/
@@ -68,16 +66,18 @@ $colorbg5: map-get($listabg, bg5);
     display:flex;
     flex-flow: row wrap;
     list-style:none;
-    justify-content: flex-end;
-    padding: 1px;
-    position:relative;
+    padding: 5px;
     top: 0px;
     right: 10px;
-    a{
+    height: auto;
+     a{
         padding: 5px;
     }
     :hover{
         background-color: $colorbg4;
+        height: auto;
+        align-items: center;
+        top: 0px;
     }
 }
 
@@ -102,7 +102,6 @@ $colorbg5: map-get($listabg, bg5);
     flex-flow: row wrap;
     flex: 1;
     list-style:none;
-    margin: 1px;
     position:sticky;
     z-index: 1000;
     width: 100%;

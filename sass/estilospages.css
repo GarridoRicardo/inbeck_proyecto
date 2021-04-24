@@ -5,28 +5,25 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-flow: column wrap;
-      flex-flow: column wrap;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  position: absolute;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   top: 0px;
   width: 100%;
   z-index: 100;
   opacity: 1;
+  height: auto;
 }
 
 /*CONTENEDOR DE LOGO*/
 .logoInbeck {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 5px 0px 0px 60px;
   opacity: 0.75;
-  width: 100vh;
+  width: 50%;
 }
 
 /*ESTILOS DE REDES SOCIALES EN MENU SUPERIOR*/
@@ -34,15 +31,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  position: relative;
   z-index: 5;
+  height: auto;
+  width: 50%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 /*ANIDACION EN ESTILO DE REDES*/
@@ -55,13 +49,10 @@
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
   list-style: none;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  padding: 1px;
-  position: relative;
+  padding: 5px;
   top: 0px;
   right: 10px;
+  height: auto;
 }
 
 .redSuperior a {
@@ -70,6 +61,11 @@
 
 .redSuperior :hover {
   background-color: rgba(192, 219, 223, 0.952);
+  height: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0px;
 }
 
 /*CONTENEDOR DE MENU DE NAVEGACION*/
@@ -109,7 +105,6 @@
       -ms-flex: 1;
           flex: 1;
   list-style: none;
-  margin: 1px;
   position: -webkit-sticky;
   position: sticky;
   z-index: 1000;
