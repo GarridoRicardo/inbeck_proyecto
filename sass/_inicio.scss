@@ -9,7 +9,7 @@
     background-attachment: fixed;
     margin-top: 0px;
     height: $alto1;
-    width: $ancho1;
+    width: 100%;
     position:relative;
     z-index: 1;
 }
@@ -86,7 +86,7 @@
 /*CONTENEDOR DE RESUMEN*/	
 .resume{
 	height: auto;
-	width: 100vw;
+	width: 100%;
     z-index: 1;
     margin-bottom: 10px;
 }
@@ -197,6 +197,7 @@ margin-left: 1%;
     row-gap: 5px;
     padding: 10px;
     height: 80vh;
+    width: 100%;
 }
 //Portada de Sección
 .portadaNosotros{
@@ -207,7 +208,7 @@ margin-left: 1%;
     height: auto;
     z-index: 1;
     height: 80vh;
-    width: $ancho1;
+    width: 100%;
     margin-bottom: 10px;
 }
 
@@ -311,12 +312,15 @@ margin-left: 1%;
     row-gap: 5px;
     padding: 10px;
     height: 80vh;
+    width: 100%;
 }
 //Portada de Sección
 .portadaTrabaje{
     background-image: url("../image/inicio/trabaje_con_nosotros.jpg");
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     position: relative;
     height: 80vh;
     z-index: 1;
@@ -531,7 +535,7 @@ div #imagePP:hover{
         align-items: center;
         justify-items: center;
         row-gap: 1px;
-        width:$ancho1;
+        width:100%;
         height:$alto1;
     }  
     section div#tituloClientes{

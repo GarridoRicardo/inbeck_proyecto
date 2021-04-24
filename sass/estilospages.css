@@ -14,25 +14,11 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background-color: #042A2B;
-  position: fixed;
+  position: absolute;
   top: 0px;
-  width: 100vw;
+  width: 100%;
   z-index: 100;
   opacity: 1;
-}
-
-/*MODIFICADOR DEL HEADER............*/
-.cabeceraContainer__modificado {
-  position: fixed;
-  top: 0px;
-  z-index: 100;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 204, 224, 0.952)), color-stop(#458c8e), to(#096063));
-  background-image: linear-gradient(to top, rgba(47, 204, 224, 0.952), #458c8e, #096063);
-  width: 100vw;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 /*CONTENEDOR DE LOGO*/
@@ -40,6 +26,7 @@
   display: block;
   padding: 5px 0px 0px 60px;
   opacity: 0.75;
+  width: 100vh;
 }
 
 /*ESTILOS DE REDES SOCIALES EN MENU SUPERIOR*/
@@ -54,7 +41,7 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  position: fixed;
+  position: relative;
   z-index: 5;
 }
 
@@ -71,10 +58,9 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin: 1px;
   padding: 1px;
-  position: fixed;
-  top: 10px;
+  position: relative;
+  top: 0px;
   right: 10px;
 }
 
@@ -98,8 +84,7 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  position: -webkit-sticky;
-  position: sticky;
+  position: relative;
   z-index: 1000;
   margin: 0px;
   -webkit-box-align: center;
@@ -108,6 +93,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 
 /*ESTILOS DE MENU DE NAVEGACION*/
@@ -127,7 +113,7 @@
   position: -webkit-sticky;
   position: sticky;
   z-index: 1000;
-  width: 100vw;
+  width: 100%;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -281,7 +267,7 @@
   background-attachment: fixed;
   margin-top: 0px;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   position: relative;
   z-index: 1;
 }
@@ -292,7 +278,7 @@
   left: 0;
   top: 0;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-color: #042A2B;
   z-index: -1;
   opacity: 0.5;
@@ -313,7 +299,7 @@
   position: relative;
   top: 0px;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   z-index: 2;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -381,7 +367,7 @@
 /*CONTENEDOR DE RESUMEN*/
 .resume {
   height: auto;
-  width: 100vw;
+  width: 100%;
   z-index: 1;
   margin-bottom: 10px;
 }
@@ -529,6 +515,7 @@
   row-gap: 5px;
   padding: 10px;
   height: 80vh;
+  width: 100%;
 }
 
 .portadaNosotros {
@@ -539,7 +526,7 @@
   height: auto;
   z-index: 1;
   height: 80vh;
-  width: 100vw;
+  width: 100%;
   margin-bottom: 10px;
 }
 
@@ -643,16 +630,19 @@
   row-gap: 5px;
   padding: 10px;
   height: 80vh;
+  width: 100%;
 }
 
 .portadaTrabaje {
   background-image: url("../image/inicio/trabaje_con_nosotros.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   position: relative;
   height: 80vh;
   z-index: 1;
-  width: 100vw;
+  width: 100%;
 }
 
 .portadaTrabaje::before {
@@ -661,7 +651,7 @@
   left: 0;
   top: 0;
   height: 80vh;
-  width: 100vw;
+  width: 100%;
   background-color: rgba(192, 219, 223, 0.952);
   z-index: -1;
   opacity: 0.4;
@@ -762,7 +752,7 @@
           align-items: center;
   justify-items: center;
   row-gap: 1px;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
@@ -910,7 +900,7 @@ div #imagePP:hover {
             align-items: center;
     justify-items: center;
     row-gap: 1px;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
   }
   section div#tituloClientes {
@@ -986,7 +976,7 @@ div #imagePP:hover {
             align-items: center;
     justify-items: center;
     row-gap: 1px;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
   }
   section div#tituloClientes {
@@ -1054,7 +1044,7 @@ div #imagePP:hover {
   background-size: cover;
   position: relative;
   height: 80vh;
-  width: 100vw;
+  width: 100%;
   z-index: 1;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1069,7 +1059,7 @@ div #imagePP:hover {
   left: 0;
   top: 0;
   height: 80vh;
-  width: 100vw;
+  width: 100%;
   background-color: #a1a9c0;
   z-index: -1;
   opacity: 0.35;
@@ -1090,7 +1080,7 @@ div #imagePP:hover {
 /*Contenedor de Parrafo*/
 .nh-parrafo {
   height: auto;
-  width: 100vw;
+  width: 100%;
   padding: 25px;
 }
 
@@ -1106,7 +1096,7 @@ div #imagePP:hover {
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .nh-parrafo {
     height: auto;
-    width: 100vw;
+    width: 100%;
     padding: 25px;
     /*Ingreso el mixin*/
   }
@@ -1122,7 +1112,7 @@ div #imagePP:hover {
 @media only screen and (max-width: 575px) {
   .nh-parrafo {
     height: auto;
-    width: 100vw;
+    width: 100%;
     padding: 5px;
     /*Ingreso el mixin*/
   }
@@ -1143,7 +1133,7 @@ div #imagePP:hover {
   display: grid;
   padding: 5px;
   height: auto;
-  width: 100vw;
+  width: 100%;
   background-color: antiquewhite;
 }
 
@@ -1159,7 +1149,7 @@ div #imagePP:hover {
 
 .m-content ul li, .vi-content ul li, .va-content ul li {
   line-height: 25px;
-  width: 100vw;
+  width: 100%;
 }
 
 /*Contenedor de Mision Vision y Valores*/
@@ -1172,7 +1162,7 @@ div #imagePP:hover {
   justify-items: center;
   background-image: none;
   height: auto;
-  width: 100vw;
+  width: 100%;
   z-index: 1;
 }
 
@@ -1250,7 +1240,7 @@ div #imagePP:hover {
       -ms-flex-pack: center;
           justify-content: center;
   height: 50vh;
-  width: 100vw;
+  width: 100%;
   justify-items: center;
   margin: 10px 0px;
   -webkit-box-align: center;

@@ -8,8 +8,8 @@ $interlineado: 1em;
 $anchofuente1: 400;
 $textnegrita: 800;
 $alintext: center;
-$ancho1: 100vw;
-$ancho2: 100vw*0.80;
+$ancho1: 100%;
+$ancho2: 80%;
 $alto1: 100vh;
 $alto2: $alto1/2;
 
@@ -37,22 +37,13 @@ $colorbg5: map-get($listabg, bg5);
     flex-direction: column;
     flex-flow: column wrap;
     flex: 1;
-    background-color: #042A2B;
-    position:fixed;
+    position:absolute;
     top: 0px;
     width: $ancho1;
     z-index: 100;
     opacity: 1;
 }
-/*MODIFICADOR DEL HEADER............*/
-.cabeceraContainer__modificado{
-    position: fixed;
-    top: 0px;
-    z-index: 100;
-    background-image: linear-gradient(to top, $colorbg3,#458c8e, #096063);
-    width: $ancho1;
-    align-items: center;
-}
+
 
 
 /*CONTENEDOR DE LOGO*/
@@ -60,6 +51,7 @@ $colorbg5: map-get($listabg, bg5);
     display: block;
     padding: 5px 0px 0px 60px;
     opacity: 0.75;
+    width: 100vh;
 }
  
 /*ESTILOS DE REDES SOCIALES EN MENU SUPERIOR*/
@@ -67,7 +59,7 @@ $colorbg5: map-get($listabg, bg5);
     display: flex;
     flex: 1;
     flex-flow: column wrap;
-    position: fixed;
+    position: relative;
     z-index: 5; 
 }
 
@@ -77,10 +69,9 @@ $colorbg5: map-get($listabg, bg5);
     flex-flow: row wrap;
     list-style:none;
     justify-content: flex-end;
-    margin: 1px;
     padding: 1px;
-    position:fixed;
-    top: 10px;
+    position:relative;
+    top: 0px;
     right: 10px;
     a{
         padding: 5px;
@@ -96,11 +87,12 @@ $colorbg5: map-get($listabg, bg5);
     display: flex;
     flex: 1;
     flex-flow: column wrap;
-    position: sticky;
+    position: relative;
     z-index: 1000;
     margin: 0px;
     align-items: center;
     justify-content: center;
+    width: 100%;
     
 }
 
@@ -113,7 +105,7 @@ $colorbg5: map-get($listabg, bg5);
     margin: 1px;
     position:sticky;
     z-index: 1000;
-    width: 100vw;
+    width: 100%;
     justify-items: center;
     align-items: center;
     justify-content: center;
