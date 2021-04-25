@@ -85,7 +85,7 @@
 
 /*CONTENEDOR DE RESUMEN*/	
 .resume{
-	height: 50vh;
+	height: 80vh;
 	width: 100%;
     z-index: 1;
     margin-bottom: 10px;
@@ -93,7 +93,7 @@
 
 
 /*ESTILOS AL CAROUSEL*/	
-.resume .carousel-item{
+.carousel-item{
 	background-position: center;
 	background-size:cover;
 	position: relative;
@@ -104,18 +104,17 @@
          animation: fadeInLeft 0.3s ease forwards;
         }
     }
-
 }
 
 .carrusel{
-height:50%;
+height:auto;
 width: auto;
 margin-right: 1%;
 margin-left: 1%;
 }
 
 .carousel-item img {
-    height: auto;
+    height: 70vh;
     object-fit: cover;
 }
 
@@ -164,10 +163,12 @@ margin-left: 1%;
     opacity: 0.8;
     align-content: center;
         h5{
-            font-size: 30px;
+            font-size: 20px;
+            font-family: $famfuente1;
         }
         p{
-            font-size: 18px;
+            font-size: 16px;
+            font-family: $famfuente1;
         }
 }
 

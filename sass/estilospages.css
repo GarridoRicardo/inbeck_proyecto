@@ -284,39 +284,39 @@
 /*SECCION 2 - RESUMEN DE LOS SERVICIOS*/
 /*CONTENEDOR DE RESUMEN*/
 .resume {
-  height: 50vh;
+  height: 80vh;
   width: 100%;
   z-index: 1;
   margin-bottom: 10px;
 }
 
 /*ESTILOS AL CAROUSEL*/
-.resume .carousel-item {
+.carousel-item {
   background-position: center;
   background-size: cover;
   position: relative;
   z-index: 1;
 }
 
-.resume .carousel-item .active h5 {
+.carousel-item .active h5 {
   -webkit-animation: fadeInLeft 0.3s ease forwards;
           animation: fadeInLeft 0.3s ease forwards;
 }
 
-.resume .carousel-item .active h5 p {
+.carousel-item .active h5 p {
   -webkit-animation: fadeInLeft 0.3s ease forwards;
           animation: fadeInLeft 0.3s ease forwards;
 }
 
 .carrusel {
-  height: 50%;
+  height: auto;
   width: auto;
   margin-right: 1%;
   margin-left: 1%;
 }
 
 .carousel-item img {
-  height: auto;
+  height: 70vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -399,11 +399,13 @@
 }
 
 .container__textos h5 {
-  font-size: 30px;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container__textos p {
-  font-size: 18px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
 }
 
 /*APLICANDO MEDIA QUERIS AL CAROUSEL*/
