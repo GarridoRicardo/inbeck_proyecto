@@ -2,7 +2,7 @@
 /*USANDO MIXIN...............*/
 @mixin texto($alto, $interlineado, $fuente) {
     font-size: $alto;
-    line-height: $interlineado;
+    line-height: $interlineado*1.5;
     font-family: $fuente;    
 }
 /*Contenedor de Seccion Nuestra Historia*/
@@ -11,8 +11,9 @@
         background-repeat:no-repeat;
         background-position:center;
         background-size: cover;
+        background-attachment: fixed;
         position:relative;
-        height: $alto1*0.8;
+        height: 100%;
         width: $ancho1;
         z-index: 1;
         align-items: center;
@@ -23,7 +24,7 @@
         position: absolute;
         left:0;
         top:0;
-        height: $alto1*0.8;
+        height: 100%;
         width: $ancho1;
         background-color:rgb(161, 169, 192);
         z-index: -1;
@@ -41,42 +42,50 @@
 }
 /*Contenedor de Parrafo*/
     .nh-parrafo{
-        height: auto;
+        height: 100%;
         width: $ancho1;
-        padding: 25px;
+        padding: 35px;
                       
         p{
-            @include texto(16px,30px,'Montserrat'sans-serif);
+            @include texto(16px,32px,'Montserrat'sans-serif);
             letter-spacing: 1px;
             text-align:justify;
         }
     }
 
 /*Media Queris para modificar el parrafo a medida que cambia el ancho*/
-@media only screen and (min-width: 576px) and (max-width: 768px){
+@media only screen and (min-width: 481px) and (max-width: 768px){
 
     .nh-parrafo{
-        height: auto;
+        height: 100%;
         width: $ancho1;
         padding: 25px;
-         /*Ingreso el mixin*/             
+        /*Ingreso el mixin*/             
         p{
-            @include texto(14px,25px,'Montserrat'sans-serif);
+            @include texto(14px,30px,'Montserrat'sans-serif);
             letter-spacing: 1px;
             text-align:justify;
         }
     }
 }
 
-@media only screen and (max-width: 575px){
+@media only screen and (max-width: 480px){
+
+    .nh-content{
+        height: auto;
+    }
+    .nh-content::before {
+        height: auto;
+    }
+
 
     .nh-parrafo{
         height: auto;
         width: $ancho1;
-        padding: 5px;
+        padding: 10px 15px;
           /*Ingreso el mixin*/                        
         p{
-            @include texto(12px,18px,'Montserrat'sans-serif);
+            @include texto(12px, 22px,'Montserrat'sans-serif);
             letter-spacing: 1px;
             text-align:justify;
         }
@@ -91,7 +100,8 @@ $fondo-mvv: color1;
     display: grid;
     padding: 5px;
     height:auto;
-    width: $ancho1;
+    width: 100%;
+    border: 1px solid black;
     @if ($fondo-mvv == color1) {
         background-color: antiquewhite;
     }@else if ($fondo-mvv == color2){
@@ -105,9 +115,10 @@ $fondo-mvv: color1;
      text-align: center;
      }
      p{
-         padding: 3px 5px;
-         text-align: left;
+         padding: 3px 25px;
+         text-align: center;
          font-size: 16px;
+         width: 100%;
      }
      ul li{
          line-height: 25px;
@@ -117,31 +128,40 @@ $fondo-mvv: color1;
 /*Contenedor de Mision Vision y Valores*/ 
 .mvv-content{
     display: grid;
-    align-items: flex-start;
+    align-items: center;
     justify-items: center;
     background-image: none;
     height: auto;
-    width: $ancho1;
+    width: 100%;
     z-index: 1;
-}
+ }
 /*Mision Contenido*/ 
 .m-content{
     @extend %mvv-descripcion;
+    
 }
 
 .e-content{
     display: flex;
     justify-content: center;
+    justify-items: center;
     width: 100%; 
+    :hover{
+        border: 2px solid antiquewhite;
+    }
 }
 
 /*Vision Contenido*/ 
 .vi-content{
     @extend %mvv-descripcion;
+    
 }
 /*Valores Contenido*/ 
 .va-content{
    @extend %mvv-descripcion;
+   margin: 0px;
+ul{
+    padding-left: 100px;
 }
-
+}
 

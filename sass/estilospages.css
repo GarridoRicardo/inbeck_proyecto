@@ -1050,8 +1050,9 @@ div #imagePP:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   position: relative;
-  height: 80vh;
+  height: 100%;
   width: 100%;
   z-index: 1;
   -webkit-box-align: center;
@@ -1066,7 +1067,7 @@ div #imagePP:hover {
   position: absolute;
   left: 0;
   top: 0;
-  height: 80vh;
+  height: 100%;
   width: 100%;
   background-color: #a1a9c0;
   z-index: -1;
@@ -1087,46 +1088,52 @@ div #imagePP:hover {
 
 /*Contenedor de Parrafo*/
 .nh-parrafo {
-  height: auto;
+  height: 100%;
   width: 100%;
-  padding: 25px;
+  padding: 35px;
 }
 
 .nh-parrafo p {
   font-size: 16px;
-  line-height: 30px;
+  line-height: 48px;
   font-family: "Montserrat" sans-serif;
   letter-spacing: 1px;
   text-align: justify;
 }
 
 /*Media Queris para modificar el parrafo a medida que cambia el ancho*/
-@media only screen and (min-width: 576px) and (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   .nh-parrafo {
-    height: auto;
+    height: 100%;
     width: 100%;
     padding: 25px;
     /*Ingreso el mixin*/
   }
   .nh-parrafo p {
     font-size: 14px;
-    line-height: 25px;
+    line-height: 45px;
     font-family: "Montserrat" sans-serif;
     letter-spacing: 1px;
     text-align: justify;
   }
 }
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 480px) {
+  .nh-content {
+    height: auto;
+  }
+  .nh-content::before {
+    height: auto;
+  }
   .nh-parrafo {
     height: auto;
     width: 100%;
-    padding: 5px;
+    padding: 10px 15px;
     /*Ingreso el mixin*/
   }
   .nh-parrafo p {
     font-size: 12px;
-    line-height: 18px;
+    line-height: 33px;
     font-family: "Montserrat" sans-serif;
     letter-spacing: 1px;
     text-align: justify;
@@ -1142,6 +1149,7 @@ div #imagePP:hover {
   padding: 5px;
   height: auto;
   width: 100%;
+  border: 1px solid black;
   background-color: antiquewhite;
 }
 
@@ -1151,9 +1159,10 @@ div #imagePP:hover {
 }
 
 .m-content p, .vi-content p, .va-content p {
-  padding: 3px 5px;
-  text-align: left;
+  padding: 3px 25px;
+  text-align: center;
   font-size: 16px;
+  width: 100%;
 }
 
 .m-content ul li, .vi-content ul li, .va-content ul li {
@@ -1165,9 +1174,9 @@ div #imagePP:hover {
 .mvv-content {
   display: -ms-grid;
   display: grid;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   justify-items: center;
   background-image: none;
   height: auto;
@@ -1183,11 +1192,24 @@ div #imagePP:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  justify-items: center;
   width: 100%;
+}
+
+.e-content :hover {
+  border: 2px solid antiquewhite;
 }
 
 /*Vision Contenido*/
 /*Valores Contenido*/
+.va-content {
+  margin: 0px;
+}
+
+.va-content ul {
+  padding-left: 100px;
+}
+
 /*APLICANDO SASS-OPERACIONES...............*/
 /*USANDO MIXIN...............*/
 /*Contenedor de Seccion Servicios*/
