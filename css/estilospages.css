@@ -2,117 +2,16 @@
 /*MAPS de Colores BG*/
 /*CONTENEDOR DEL HEADER............*/
 .cabeceraContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-flow: column wrap;
-      flex-flow: column wrap;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  background-color: #042A2B;
+  background-color: rgba(86, 151, 160, 0.952);
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
-  width: 100vw;
+  height: auto;
+  width: 100%;
   z-index: 100;
-  opacity: 1;
-}
-
-/*MODIFICADOR DEL HEADER............*/
-.cabeceraContainer__modificado {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
-  z-index: 100;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 204, 224, 0.952)), color-stop(#458c8e), to(#096063));
-  background-image: linear-gradient(to top, rgba(47, 204, 224, 0.952), #458c8e, #096063);
-  width: 100vw;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-/*CONTENEDOR DE LOGO*/
-.logoInbeck {
-  display: block;
-  padding: 5px 0px 0px 60px;
-  opacity: 0.75;
-}
-
-/*ESTILOS DE REDES SOCIALES EN MENU SUPERIOR*/
-.contenedorRed {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  position: -webkit-sticky;
-  position: sticky;
-  z-index: 5;
-}
-
-/*ANIDACION EN ESTILO DE REDES*/
-.redSuperior {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  list-style: none;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin: 1px;
-  padding: 1px;
-  position: fixed;
-  top: 0px;
-  right: 0px;
-}
-
-.redSuperior a {
-  padding: 5px;
-}
-
-.redSuperior :hover {
-  background-color: rgba(192, 219, 223, 0.952);
 }
 
 /*CONTENEDOR DE MENU DE NAVEGACION*/
-.menuContenedor {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  position: -webkit-sticky;
-  position: sticky;
-  z-index: 1000;
-  margin: 0px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 /*ESTILOS DE MENU DE NAVEGACION*/
 .menu {
   display: -webkit-box;
@@ -126,11 +25,11 @@
       -ms-flex: 1;
           flex: 1;
   list-style: none;
-  margin: 1px;
   position: -webkit-sticky;
   position: sticky;
+  top: 0;
   z-index: 1000;
-  width: 100vw;
+  width: 100%;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -153,15 +52,17 @@
 }
 
 .menu-bg:hover {
-  background-color: rgba(47, 204, 224, 0.952);
-  -webkit-box-shadow: 3px 3px 20px black;
-          box-shadow: 3px 3px 20px black;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .masMenu-bg a:hover {
-  background-color: rgba(47, 204, 224, 0.952);
-  -webkit-box-shadow: 3px 3px 20px black;
-          box-shadow: 3px 3px 20px black;
+  background-color: rgba(192, 219, 223, 0.952);
+}
+
+.bg-redes {
+  -webkit-filter: drop-shadow(1);
+          filter: drop-shadow(1);
 }
 
 /*ESTILOS PARA EL SUBMENU*/
@@ -278,11 +179,13 @@
 /*SECCION 1 - PORTADA DE BIENVENIDA*/
 .portadaContenedor {
   background-image: url("../image/inicio/portada.jpg");
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   margin-top: 0px;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   position: relative;
   z-index: 1;
 }
@@ -293,7 +196,7 @@
   left: 0;
   top: 0;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-color: #042A2B;
   z-index: -1;
   opacity: 0.5;
@@ -314,7 +217,7 @@
   position: relative;
   top: 0px;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   z-index: 2;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -382,7 +285,7 @@
 /*CONTENEDOR DE RESUMEN*/
 .resume {
   height: auto;
-  width: 100vw;
+  width: 100%;
   z-index: 1;
   margin-bottom: 10px;
 }
@@ -530,6 +433,7 @@
   row-gap: 5px;
   padding: 10px;
   height: 80vh;
+  width: 100%;
 }
 
 .portadaNosotros {
@@ -540,7 +444,7 @@
   height: auto;
   z-index: 1;
   height: 80vh;
-  width: 100vw;
+  width: 100%;
   margin-bottom: 10px;
 }
 
@@ -644,16 +548,19 @@
   row-gap: 5px;
   padding: 10px;
   height: 80vh;
+  width: 100%;
 }
 
 .portadaTrabaje {
   background-image: url("../image/inicio/trabaje_con_nosotros.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   position: relative;
   height: 80vh;
   z-index: 1;
-  width: 100vw;
+  width: 100%;
 }
 
 .portadaTrabaje::before {
@@ -662,7 +569,7 @@
   left: 0;
   top: 0;
   height: 80vh;
-  width: 100vw;
+  width: 100%;
   background-color: rgba(192, 219, 223, 0.952);
   z-index: -1;
   opacity: 0.4;
@@ -763,7 +670,7 @@
           align-items: center;
   justify-items: center;
   row-gap: 1px;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
@@ -911,7 +818,7 @@ div #imagePP:hover {
             align-items: center;
     justify-items: center;
     row-gap: 1px;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
   }
   section div#tituloClientes {
@@ -987,7 +894,7 @@ div #imagePP:hover {
             align-items: center;
     justify-items: center;
     row-gap: 1px;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
   }
   section div#tituloClientes {
@@ -1055,7 +962,7 @@ div #imagePP:hover {
   background-size: cover;
   position: relative;
   height: 80vh;
-  width: 100vw;
+  width: 100%;
   z-index: 1;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1070,7 +977,7 @@ div #imagePP:hover {
   left: 0;
   top: 0;
   height: 80vh;
-  width: 100vw;
+  width: 100%;
   background-color: #a1a9c0;
   z-index: -1;
   opacity: 0.35;
@@ -1091,7 +998,7 @@ div #imagePP:hover {
 /*Contenedor de Parrafo*/
 .nh-parrafo {
   height: auto;
-  width: 100vw;
+  width: 100%;
   padding: 25px;
 }
 
@@ -1107,7 +1014,7 @@ div #imagePP:hover {
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .nh-parrafo {
     height: auto;
-    width: 100vw;
+    width: 100%;
     padding: 25px;
     /*Ingreso el mixin*/
   }
@@ -1123,7 +1030,7 @@ div #imagePP:hover {
 @media only screen and (max-width: 575px) {
   .nh-parrafo {
     height: auto;
-    width: 100vw;
+    width: 100%;
     padding: 5px;
     /*Ingreso el mixin*/
   }
@@ -1144,7 +1051,7 @@ div #imagePP:hover {
   display: grid;
   padding: 5px;
   height: auto;
-  width: 100vw;
+  width: 100%;
   background-color: antiquewhite;
 }
 
@@ -1160,7 +1067,7 @@ div #imagePP:hover {
 
 .m-content ul li, .vi-content ul li, .va-content ul li {
   line-height: 25px;
-  width: 100vw;
+  width: 100%;
 }
 
 /*Contenedor de Mision Vision y Valores*/
@@ -1173,7 +1080,7 @@ div #imagePP:hover {
   justify-items: center;
   background-image: none;
   height: auto;
-  width: 100vw;
+  width: 100%;
   z-index: 1;
 }
 
@@ -1251,7 +1158,7 @@ div #imagePP:hover {
       -ms-flex-pack: center;
           justify-content: center;
   height: 50vh;
-  width: 100vw;
+  width: 100%;
   justify-items: center;
   margin: 10px 0px;
   -webkit-box-align: center;
