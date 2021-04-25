@@ -32,6 +32,7 @@ $colorbg5: map-get($listabg, bg5);
 
 
 /*CONTENEDOR DEL HEADER............*/
+
 .cabeceraContainer{
     display: flex;
     flex-flow: row wrap;
@@ -57,7 +58,7 @@ $colorbg5: map-get($listabg, bg5);
     display: flex;
     z-index: 5; 
     height: auto;
-    width: 50%;
+    width: 100%;
     justify-content: flex-end;
 }
 
@@ -87,7 +88,8 @@ $colorbg5: map-get($listabg, bg5);
     display: flex;
     flex: 1;
     flex-flow: column wrap;
-    position: relative;
+    position:sticky;
+    top: 0px;
     z-index: 1000;
     margin: 0px;
     align-items: center;
@@ -103,6 +105,7 @@ $colorbg5: map-get($listabg, bg5);
     flex: 1;
     list-style:none;
     position:sticky;
+    top: 0;
     z-index: 1000;
     width: 100%;
     justify-items: center;
