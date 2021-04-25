@@ -18,7 +18,7 @@ $listabg:(
    bg0:#042A2B,
    bg1:#095b5d,
    bg2:#45818E,
-   bg3:rgba(47, 204, 224, 0.952),
+   bg3:rgba(86, 151, 160, 0.952),
    bg4:rgba(192, 219, 223, 0.952),
    bg5: transparent,
    );
@@ -41,6 +41,7 @@ $colorbg5: map-get($listabg, bg5);
     z-index: 100;
     opacity: 1;
     height: auto;
+    background-color: $colorbg3;
 }
 
 
@@ -126,14 +127,13 @@ $colorbg5: map-get($listabg, bg5);
 }
 
 .menu-bg:hover{
-    background-color: $colorbg3;
-    box-shadow: 3px 3px 20px black ;
-    
+    transform: scale(1.1);      
 }
 
+
 .masMenu-bg a:hover {
-    background-color: $colorbg3;
-    box-shadow: 3px 3px 20px black ;
+    background-color: $colorbg4;
+  
 }
 
 /*ESTILOS PARA EL SUBMENU*/

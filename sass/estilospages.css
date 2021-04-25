@@ -14,6 +14,7 @@
   z-index: 100;
   opacity: 1;
   height: auto;
+  background-color: rgba(86, 151, 160, 0.952);
 }
 
 /*CONTENEDOR DE LOGO*/
@@ -134,15 +135,12 @@
 }
 
 .menu-bg:hover {
-  background-color: rgba(47, 204, 224, 0.952);
-  -webkit-box-shadow: 3px 3px 20px black;
-          box-shadow: 3px 3px 20px black;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .masMenu-bg a:hover {
-  background-color: rgba(47, 204, 224, 0.952);
-  -webkit-box-shadow: 3px 3px 20px black;
-          box-shadow: 3px 3px 20px black;
+  background-color: rgba(192, 219, 223, 0.952);
 }
 
 /*ESTILOS PARA EL SUBMENU*/
