@@ -88,7 +88,7 @@
 	height: 80vh;
 	width: 100%;
     z-index: 1;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 
@@ -97,7 +97,7 @@
 	background-position: center;
 	background-size:cover;
 	position: relative;
-	z-index: 1;
+    z-index: 1;
       .active h5{
             animation: fadeInLeft 0.3s ease forwards;
         p{
@@ -116,6 +116,9 @@ margin-left: 1%;
 .carousel-item img {
     height: 70vh;
     object-fit: cover;
+    opacity: 0.85;
+    position: relative;
+    z-index: 1;
 }
 
 .carousel-indicators{
@@ -189,24 +192,25 @@ margin-left: 1%;
 /*SECCION 3 - RESUMEN DE ACERCA DE*/	
 
 //Contenedor de Sección
-.contenedorNosotros{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 20% auto 30%;
+.c-nosotros{
+    display: flex;
+    flex-flow: row wrap;
     align-items: center;
     justify-items: center;
-    row-gap: 5px;
     padding: 10px;
-    height: 80vh;
+    height: 100%;
     width: 100%;
 }
 //Portada de Sección
-.portadaNosotros{
+.p-nosotros{
+    display: flex;
+    flex-flow: row wrap;
     background-image: url("../image/acercade/aereo.jpg");
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     position: relative;
-    height: auto;
     z-index: 1;
     height: 80vh;
     width: 100%;
@@ -214,17 +218,23 @@ margin-left: 1%;
 }
 
 //Titulo de Sección
-.tituloNosotros{
-    margin: 30px ;
-    text-align: justify;
+.t-nosotros{
+    display: flex;
+    margin: 10px ;
+    width: 100%;
+    text-align: center;
     text-transform: uppercase;
     font-family: $famfuente1;
     h3{
         font-size: 20px;
+        text-align: center;
+        width: 100%;
     }
 }
 //Párrafo de Sección
-.parrafoNosotros{
+.pf-nosotros{
+    display: flex;
+    align-items: center;
     color: $colort1;
     font-weight: normal;
     font-family: $famfuente1;
@@ -232,10 +242,20 @@ margin-left: 1%;
     line-height: 30px;
     letter-spacing: 1px;
     padding: 25px;
+    text-align: justify;
+    height: auto;
 }
 
 //Botón de Sección
-.botonNos a{ 
+.b-nosotros{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-items: center;
+    justify-content: center;
+    height: auto;
+}
+.b-nosotros a{ 
         text-decoration: none;
         color:$colort0;
         border: solid 1px white ;
@@ -246,7 +266,8 @@ margin-left: 1%;
         margin: 8px 10px;
         padding: 8px 20px;
 }
-.botonNos:hover a{
+
+.b-nosotros:hover a{
         color: $colort0;
         background-color:$colorbg1;
         font-family: $famfuente1;
@@ -261,7 +282,7 @@ margin-left: 1%;
 /*APLICANDO MEDIA QUERIS A SECCION 3*/	
 @media only screen and (min-width: 320px) and (max-width:767px) {
 
-.tituloNosotros{
+.t-nosotros{
         margin: 15px ;
         text-align: justify;
         text-transform: uppercase;
@@ -270,23 +291,23 @@ margin-left: 1%;
             font-size: 14px;
         }
     }
-.parrafoNosotros{
+.pf-nosotros{
     text-align: justify;
     color: $colort1;
     font-weight: normal;
     font-family: $famfuente1;
-    font-size: 14px;
-    line-height: 35px;
+    font-size: 12px;
+    line-height: 30px;
     letter-spacing: 1px;
     padding: 10px;
 }
-.botonNos a{ 
+.b-nosotros a{ 
     font-size: 12px;
     letter-spacing: 3px;
     margin: 8px 10px;
     padding: 8px 20px;
 }
-.botonNos:hover a{
+.b-nosotros:hover a{
     font-size: 12px;
     letter-spacing: 3px;
     margin: 8px 10px;
@@ -304,7 +325,7 @@ margin-left: 1%;
 
 /*CONTENEDOR DE TRABAJE CON NOSOTROS*/	
 //Contenedor de Sección
-.contenedorTrabaje{
+.c-trabaje{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 20% auto 30%;

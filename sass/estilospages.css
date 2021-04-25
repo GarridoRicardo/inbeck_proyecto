@@ -287,7 +287,7 @@
   height: 80vh;
   width: 100%;
   z-index: 1;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 /*ESTILOS AL CAROUSEL*/
@@ -319,6 +319,9 @@
   height: 70vh;
   -o-object-fit: cover;
      object-fit: cover;
+  opacity: 0.85;
+  position: relative;
+  z-index: 1;
 }
 
 .carousel-indicators {
@@ -421,47 +424,67 @@
 }
 
 /*SECCION 3 - RESUMEN DE ACERCA DE*/
-.contenedorNosotros {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 20% auto 30%;
-      grid-template-rows: 20% auto 30%;
+.c-nosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
-  row-gap: 5px;
   padding: 10px;
-  height: 80vh;
+  height: 100%;
   width: 100%;
 }
 
-.portadaNosotros {
+.p-nosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   background-image: url("../image/acercade/aereo.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   position: relative;
-  height: auto;
   z-index: 1;
   height: 80vh;
   width: 100%;
   margin-bottom: 10px;
 }
 
-.tituloNosotros {
-  margin: 30px;
-  text-align: justify;
+.t-nosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
+  width: 100%;
+  text-align: center;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
 }
 
-.tituloNosotros h3 {
+.t-nosotros h3 {
   font-size: 20px;
+  text-align: center;
+  width: 100%;
 }
 
-.parrafoNosotros {
+.pf-nosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: black;
   font-weight: normal;
   font-family: "Montserrat", sans-serif;
@@ -469,9 +492,26 @@
   line-height: 30px;
   letter-spacing: 1px;
   padding: 25px;
+  text-align: justify;
+  height: auto;
 }
 
-.botonNos a {
+.b-nosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+}
+
+.b-nosotros a {
   text-decoration: none;
   color: white;
   border: solid 1px white;
@@ -483,7 +523,7 @@
   padding: 8px 20px;
 }
 
-.botonNos:hover a {
+.b-nosotros:hover a {
   color: white;
   background-color: #095b5d;
   font-family: "Montserrat", sans-serif;
@@ -497,32 +537,32 @@
 
 /*APLICANDO MEDIA QUERIS A SECCION 3*/
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-  .tituloNosotros {
+  .t-nosotros {
     margin: 15px;
     text-align: justify;
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
   }
-  .tituloNosotros h3 {
+  .t-nosotros h3 {
     font-size: 14px;
   }
-  .parrafoNosotros {
+  .pf-nosotros {
     text-align: justify;
     color: black;
     font-weight: normal;
     font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    line-height: 35px;
+    font-size: 12px;
+    line-height: 30px;
     letter-spacing: 1px;
     padding: 10px;
   }
-  .botonNos a {
+  .b-nosotros a {
     font-size: 12px;
     letter-spacing: 3px;
     margin: 8px 10px;
     padding: 8px 20px;
   }
-  .botonNos:hover a {
+  .b-nosotros:hover a {
     font-size: 12px;
     letter-spacing: 3px;
     margin: 8px 10px;
@@ -536,7 +576,7 @@
 
 /*SECCION 4 - TRABAJE CON NOSOTROS*/
 /*CONTENEDOR DE TRABAJE CON NOSOTROS*/
-.contenedorTrabaje {
+.c-trabaje {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
