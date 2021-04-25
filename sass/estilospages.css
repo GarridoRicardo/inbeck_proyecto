@@ -1147,6 +1147,7 @@ div #imagePP:hover {
 
 .m-content h3, .vi-content h3, .va-content h3 {
   padding: 3px 15px;
+  text-align: center;
 }
 
 .m-content p, .vi-content p, .va-content p {
@@ -1175,6 +1176,16 @@ div #imagePP:hover {
 }
 
 /*Mision Contenido*/
+.e-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
 /*Vision Contenido*/
 /*Valores Contenido*/
 /*APLICANDO SASS-OPERACIONES...............*/
