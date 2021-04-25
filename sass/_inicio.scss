@@ -85,7 +85,7 @@
 
 /*CONTENEDOR DE RESUMEN*/	
 .resume{
-	height: auto;
+	height: 50vh;
 	width: 100%;
     z-index: 1;
     margin-bottom: 10px;
@@ -98,7 +98,7 @@
 	background-size:cover;
 	position: relative;
 	z-index: 1;
-    .active h5{
+      .active h5{
             animation: fadeInLeft 0.3s ease forwards;
         p{
          animation: fadeInLeft 0.3s ease forwards;
@@ -108,7 +108,7 @@
 }
 
 .carrusel{
-height:80vh;
+height:50%;
 width: auto;
 margin-right: 1%;
 margin-left: 1%;
