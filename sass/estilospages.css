@@ -1186,9 +1186,8 @@ div #imagePP:hover {
 
 /*Mision Contenido*/
 .e-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1207,7 +1206,37 @@ div #imagePP:hover {
 }
 
 .va-content ul {
-  padding-left: 100px;
+  padding: 0px;
+}
+
+.tabla-valores {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+}
+
+.tabla-valores ul {
+  margin: 0;
+  padding: 0;
+}
+
+.tabla-valores ul li {
+  height: 40px;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  background-color: transparent;
 }
 
 /*APLICANDO SASS-OPERACIONES...............*/
