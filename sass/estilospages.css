@@ -2,99 +2,16 @@
 /*MAPS de Colores BG*/
 /*CONTENEDOR DEL HEADER............*/
 .cabeceraContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  top: 0px;
-  width: 100%;
-  z-index: 100;
-  opacity: 1;
-  height: auto;
   background-color: rgba(86, 151, 160, 0.952);
-}
-
-/*CONTENEDOR DE LOGO*/
-.logoInbeck {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 5px 0px 0px 60px;
-  opacity: 0.75;
-  width: 50%;
-}
-
-/*ESTILOS DE REDES SOCIALES EN MENU SUPERIOR*/
-.contenedorRed {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  z-index: 5;
-  height: auto;
-  width: 100%;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-/*ANIDACION EN ESTILO DE REDES*/
-.redSuperior {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  list-style: none;
-  padding: 5px;
-  top: 0px;
-  right: 10px;
-  height: auto;
-}
-
-.redSuperior a {
-  padding: 5px;
-}
-
-.redSuperior :hover {
-  background-color: rgba(192, 219, 223, 0.952);
-  height: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  top: 0px;
-}
-
-/*CONTENEDOR DE MENU DE NAVEGACION*/
-.menuContenedor {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
-  z-index: 1000;
-  margin: 0px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  height: auto;
   width: 100%;
+  z-index: 100;
 }
 
+/*CONTENEDOR DE MENU DE NAVEGACION*/
 /*ESTILOS DE MENU DE NAVEGACION*/
 .menu {
   display: -webkit-box;
@@ -141,6 +58,11 @@
 
 .masMenu-bg a:hover {
   background-color: rgba(192, 219, 223, 0.952);
+}
+
+.bg-redes {
+  -webkit-filter: drop-shadow(1);
+          filter: drop-shadow(1);
 }
 
 /*ESTILOS PARA EL SUBMENU*/

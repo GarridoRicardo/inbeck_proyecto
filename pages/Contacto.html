@@ -25,67 +25,63 @@
 </head>
 
 <body>
-	<!--Cabecera-->
-	<header class="cabeceraContainer__modificado">
-		<div>
-			<!--Contenedor de menu-->
-			<div class="logoInbeck">
-				<!--Logotipo-->
-				<a href="../index.html"><img style="width: 180px;" src="../image/logos/logo_2020.png"
-						alt="Logo InBeck"></a>
-			</div>
-			<div class="contenedorRed">
-				<!--redes sociales-->
-				<ul class="redSuperior">
-					<li><a href="https://www.facebook.com/Ingenieria.Topografia.Deteccion" target="_blank"><img
-								style="width: 20px" src="../image/iconos/facebook.png" alt="Facebook"></a></li>
-					<li><a href="https://www.instagram.com/inbeck_srl/" target="_blank"><img style="width: 20px"
-								src="../image/iconos/instagram.png" alt="Instagram"></a> </li>
-					<li><a href="https://www.linkedin.com/company/inbeck/" target="_blank"><img style="width: 20px"
-								src="../image/iconos/linkedin.png" alt="LinkedIn"></a></li>
-					<li><a href="https://g.page/inbeck-s-r-l-?share" target="_blank"><img style="width: 20px"
-								src="../image/iconos/search.png" alt="Google"></a></li>
-				</ul>
-			</div>
-		</div>
+	<!--Sección - Cabecera-->
+	<header class="cabeceraContainer">
 		<!--Comienza el Contenedor del Menu de Navegacion-->
-		<div class="menuContenedor">
+		<div class="container-fluid">
 			<!--Navegacion de menu de BS-->
-			<nav class="navbar navbar-expand-lg navbar-light menu">
-				<a class="navbar-brand" href="../index.html">Inicio</a>
+			<nav class="navbar navbar-expand-lg navbar-light menu text-center mr-auto ml-auto sticky-top">
+				<!--Logo de Empresa-->
+				<a class="navbar-brand menu-bg" href="../index.html">
+					<img style="width: 140px;" src="../image/logos/logo_2020.png" class="d-inline-block align-top"
+						alt="Logo InBeck">
+				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse"
 					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
 					aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
+				<!--Paginas-->
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item active">
-							<a class="nav-link" href="../pages/Acerca De.html">Acerca De<span
+					<ul class="navbar-nav mr-auto ml-auto">
+						<li class="nav-item active masMenu-bg">
+							<a class="nav-link" href="../index.html">Inicio<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item active masMenu-bg">
+							<a class="nav-link" href="../pages/Nosotros.html">Nosotros<span
 									class="sr-only">(current)</span></a>
 						</li>
-						<li class="nav-item active">
+						<li class="nav-item active masMenu-bg">
 							<a class="nav-link" href="../pages/Servicios.html">Sevicios<span
 									class="sr-only">(current)</span></a>
 						</li>
-						<li class="nav-item active">
+						<li class="nav-item active masMenu-bg">
 							<a class="nav-link" href="../pages/Contacto.html">Contacto<span
 									class="sr-only">(current)</span></a>
 						</li>
-						<li class="nav-item active">
+						<li class="nav-item active masMenu-bg">
 							<a class="nav-link" href="../pages/Blog.html">Blog<span class="sr-only">(current)</span></a>
 						</li>
-
 					</ul>
-					<form class="form-inline my-2 my-lg-0">
-						<input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search">
-						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-					</form>
+					<!--Contenedor de Redes sociales-->
+					<div class="masMenu-bg bg-redes">
+						<a href="https://www.facebook.com/Ingenieria.Topografia.Deteccion" target="_blank"
+							class="btn"><img style="width: 20px" src="../image/iconos/facebook.png" alt="Facebook"></a>
+
+						<a href="https://www.instagram.com/inbeck_srl/" target="_blank" class="btn"><img
+								style="width: 20px" src="../image/iconos/instagram.png" alt="Instagram"></a>
+
+						<a href="https://www.linkedin.com/company/inbeck/" target="_blank" class="btn"><img
+								style="width: 20px" src="../image/iconos/linkedin.png" alt="linkedin"></a>
+
+						<a href="https://g.page/inbeck-s-r-l-?share" target="_blank" class="btn"><img
+								style="width: 20px" src="../image/iconos/search.png" alt="Google"></a>
+					</div>
 				</div>
 			</nav>
 		</div>
 	</header>
-
+	
 	<!--Comienza el Contenedor de Contacto-->
 	<div class="c-contenedor container-fluid">
 		<!--Titulo Principal de la Pagina-->
