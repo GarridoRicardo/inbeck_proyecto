@@ -34,11 +34,12 @@ $colorbg5: map-get($listabg, bg5);
 /*CONTENEDOR DEL HEADER............*/
 
 .cabeceraContainer{
+    display: flex;
     background-color:rgba(86, 151, 160, 0.952);
     position: sticky;
     top: 0px;
     height: auto;
-    width: $ancho1;
+    width: 100%;
     z-index: 100;
 }
  
