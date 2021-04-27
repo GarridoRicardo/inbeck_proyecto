@@ -5,7 +5,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: rgba(86, 151, 160, 0.952);
+  background-color: #c1ddf0;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
@@ -55,8 +55,8 @@
 }
 
 .menu-bg:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .masMenu-bg a:hover {
@@ -1398,9 +1398,21 @@ div #imagePP:hover {
 }
 
 .politica {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: black;
-  margin: 25px 0px 5px;
+  margin-top: 25px;
   position: relative;
   text-align: center;
+  height: 100px;
+  width: 100%;
 }
 /*# sourceMappingURL=estilospages.css.map */
