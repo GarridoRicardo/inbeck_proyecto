@@ -70,6 +70,23 @@ $colorbg5: map-get($listabg, bg5);
 
 }
 
+h1{
+    
+        animation-duration: 2s;
+        animation-name: aparecer;
+     }
+     
+     @keyframes aparecer {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+     }
+     
+
+
 
 @media only screen and (min-width: 768px){
 /*APLICO ANIDACION EN TITULOS............*/
@@ -97,3 +114,4 @@ $colorbg5: map-get($listabg, bg5);
             }
         }
     } 
+

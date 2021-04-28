@@ -5,7 +5,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #c1ddf0;
+  background-color: #97b1a6;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
@@ -57,6 +57,8 @@
 .menu-bg:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
 }
 
 .masMenu-bg a:hover {
@@ -147,6 +149,31 @@
   }
   .titulos--h3 {
     font-size: 1rem;
+  }
+}
+
+h1 {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -282,6 +309,8 @@
   font-size: 12px;
   letter-spacing: 3px;
   border: solid 1px white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 /*SECCION 2 - RESUMEN DE LOS SERVICIOS*/
@@ -524,8 +553,8 @@
 
 .btn-nh a {
   text-decoration: none;
-  color: white;
-  border: solid 1px white;
+  color: black;
+  border: solid 1px black;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 12px;
@@ -544,6 +573,8 @@
   margin: 8px 10px;
   padding: 8px 20px;
   border: solid 1px white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 /*APLICANDO MEDIA QUERIS A SECCION 3*/
@@ -611,7 +642,7 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  background-image: url("../image/inicio/trabaje_con_nosotros.jpg");
+  background-image: url("../image/inicio/enviecv.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -631,7 +662,7 @@
   width: 100%;
   background-color: rgba(192, 219, 223, 0.952);
   z-index: -1;
-  opacity: 0.4;
+  opacity: 0.65;
 }
 
 .t-trabaje {
@@ -688,8 +719,8 @@
 
 .btn-cv a {
   text-decoration: none;
-  color: white;
-  border: solid 1px white;
+  color: black;
+  border: solid 1px black;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 12px;
@@ -710,6 +741,8 @@
   padding: 8px 20px;
   border: solid 1px white;
   text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
@@ -841,6 +874,8 @@ div #imageYPF:hover {
           transform: scale(1.1, 1.1);
   -webkit-box-shadow: 3px 3px 20px black;
           box-shadow: 3px 3px 20px black;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
 }
 
 div #imagePP:hover {
@@ -848,6 +883,8 @@ div #imagePP:hover {
           transform: scale(1.1, 1.1);
   -webkit-box-shadow: 3px 3px 20px black;
           box-shadow: 3px 3px 20px black;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
 }
 
 #imagePAE:hover {
@@ -855,6 +892,8 @@ div #imagePP:hover {
           transform: scale(1.1, 1.1);
   -webkit-box-shadow: 3px 3px 20px black;
           box-shadow: 3px 3px 20px black;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
 }
 
 #imageWll:hover {
@@ -862,6 +901,8 @@ div #imagePP:hover {
           transform: scale(1.1, 1.1);
   -webkit-box-shadow: 3px 3px 20px black;
           box-shadow: 3px 3px 20px black;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
 }
 
 #imageEqui:hover {
@@ -869,6 +910,8 @@ div #imagePP:hover {
           transform: scale(1.1, 1.1);
   -webkit-box-shadow: 3px 3px 20px black;
           box-shadow: 3px 3px 20px black;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
 }
 
 #imageSEI:hover {
@@ -876,6 +919,8 @@ div #imagePP:hover {
           transform: scale(1.1, 1.1);
   -webkit-box-shadow: 3px 3px 20px black;
           box-shadow: 3px 3px 20px black;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
 }
 
 #imageFH:hover {
@@ -883,6 +928,8 @@ div #imagePP:hover {
           transform: scale(1.1, 1.1);
   -webkit-box-shadow: 3px 3px 20px black;
           box-shadow: 3px 3px 20px black;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
 }
 
 #imageELE:hover {
@@ -890,6 +937,8 @@ div #imagePP:hover {
           transform: scale(1.1, 1.1);
   -webkit-box-shadow: 3px 3px 20px black;
           box-shadow: 3px 3px 20px black;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
 }
 
 /*APLICANDO MEDIA QUERIS A NUESTROS CLIENTES - RESPONSIVE CELULARES*/

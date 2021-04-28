@@ -77,6 +77,7 @@
             font-size: 12px;
             letter-spacing: 3px;
             border: solid 1px white ;
+            transition: 0.5s;
          }
 }
 
@@ -260,8 +261,8 @@ margin-left: 1%;
 }
 .btn-nh a{ 
         text-decoration: none;
-        color:$colort0;
-        border: solid 1px white ;
+        color:$colort1;
+        border: solid 1px black ;
         font-family: $famfuente1;
         font-weight: 500;
         font-size: 12px;
@@ -280,6 +281,7 @@ margin-left: 1%;
         margin: 8px 10px;
         padding: 8px 20px;
         border: solid 1px white;
+        transition: 0.5s;
 }
 
 /*APLICANDO MEDIA QUERIS A SECCION 3*/	
@@ -340,7 +342,7 @@ margin-left: 1%;
 .p-trabaje{
     display: flex;
     flex-flow: row wrap;
-    background-image: url("../image/inicio/trabaje_con_nosotros.jpg");
+    background-image: url("../image/inicio/enviecv.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -350,6 +352,7 @@ margin-left: 1%;
     z-index: 1;
     width: $ancho1;
 }
+
 .p-trabaje::before {
     content: '';
     position: absolute;
@@ -359,7 +362,7 @@ margin-left: 1%;
     width: $ancho1;
     background-color: $colorbg4;
     z-index: -1;
-    opacity: 0.4;
+    opacity: 0.65;
 }
 //Titulo de Sección
 .t-trabaje{
@@ -401,8 +404,8 @@ margin-left: 1%;
 }
 .btn-cv a{
     text-decoration: none;
-    color: $colort0;
-    border: solid 1px white ;
+    color: $colort1;
+    border: solid 1px black ;
     font-family: $famfuente1;
     font-weight: 500;
     font-size: 12px;
@@ -422,6 +425,7 @@ margin-left: 1%;
     padding: 8px 20px;
     border: solid 1px white ;
     text-transform: uppercase;
+    transition: 0.5s;
 }
 
 @media only screen and (min-width: 320px) and (max-width:767px) {
@@ -529,34 +533,42 @@ section#imageELE{
 div #imageYPF:hover{
     transform: scale(1.1,1.1);
     box-shadow: 3px 3px 20px black ;
+    transition: 0.75s;
 }
 div #imagePP:hover{
     transform: scale(1.1,1.1);
     box-shadow: 3px 3px 20px black ;
+    transition: 0.75s;
 }
 #imagePAE:hover{
     transform: scale(1.1,1.1);
     box-shadow: 3px 3px 20px black ;
+    transition: 0.75s;
 }
 #imageWll:hover{
     transform: scale(1.1,1.1);
     box-shadow: 3px 3px 20px black ;
+    transition: 0.75s;
 }
 #imageEqui:hover{
     transform: scale(1.1,1.1);
     box-shadow: 3px 3px 20px black ;
+    transition: 0.75s;
 }
 #imageSEI:hover{
     transform: scale(1.1,1.1);
     box-shadow: 3px 3px 20px black ;
+    transition: 0.75s;
 }
 #imageFH:hover{
     transform: scale(1.1,1.1);
     box-shadow: 3px 3px 20px black ;
+    transition: 0.75s;
 }
 #imageELE:hover{
     transform: scale(1.1,1.1);
     box-shadow: 3px 3px 20px black ;
+    transition: 0.75s;
 }
 
 /*APLICANDO MEDIA QUERIS A NUESTROS CLIENTES - RESPONSIVE CELULARES*/

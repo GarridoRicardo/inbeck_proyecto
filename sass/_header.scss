@@ -35,7 +35,7 @@ $colorbg5: map-get($listabg, bg5);
 
 .cabeceraContainer{
     display: flex;
-    background-color:rgb(193, 221, 240);
+    background-color: #97b1a6;
     position: sticky;
     top: 0px;
     height: auto;
@@ -73,7 +73,8 @@ $colorbg5: map-get($listabg, bg5);
 }
 
 .menu-bg:hover{
-    transform: scale(1.05);      
+    transform: scale(1.05);  
+    transition: 0.75s;    
 }
 
 .masMenu-bg a:hover {
