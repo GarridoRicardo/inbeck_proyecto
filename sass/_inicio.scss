@@ -205,7 +205,7 @@ margin-left: 1%;
 .p-nosotros{
     display: flex;
     flex-flow: row wrap;
-    background-image: url("../image/inicio/petroleo.jpg");
+    background-image: url("../image/inicio/fondo_nosotros.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -214,6 +214,17 @@ margin-left: 1%;
     z-index: 1;
     height: 80vh;
     width: 100%;
+}
+.p-nosotros::before {
+    content: '';
+    position: absolute;
+    left:0;
+    top:0;
+    height: $alto1;
+    width: 100%;
+    background-color:$colorbg0;
+    z-index: -1;
+    opacity: 0.4;
 }
 
 //Titulo de Sección
@@ -234,7 +245,7 @@ margin-left: 1%;
 .pf-nosotros{
     display: flex;
     align-items: center;
-    color: $colort1;
+    color: $colort0;
     font-weight: normal;
     font-family: $famfuente1;
     font-size: 18px;
@@ -261,8 +272,8 @@ margin-left: 1%;
 }
 .btn-nh a{ 
         text-decoration: none;
-        color:$colort1;
-        border: solid 1px black ;
+        color:$colort0;
+        border: solid 1px white ;
         font-family: $famfuente1;
         font-weight: 500;
         font-size: 12px;
@@ -298,7 +309,7 @@ margin-left: 1%;
     }
 .pf-nosotros{
     text-align: left;
-    color: $colort1;
+    color: $colort0;
     font-weight: normal;
     font-family: $famfuente1;
     font-size: 18px;
@@ -362,7 +373,7 @@ margin-left: 1%;
     width: $ancho1;
     background-color: $colorbg4;
     z-index: -1;
-    opacity: 0.65;
+    opacity: 0.5;
 }
 //Titulo de Sección
 .t-trabaje{
@@ -372,6 +383,7 @@ margin-left: 1%;
         text-transform: uppercase;
         font-family: $famfuente1;
         justify-content: center;
+        background-color: white;
         h3{
             font-size: 20px;
             width: 50%;
@@ -445,6 +457,7 @@ margin-left: 1%;
     line-height: 35px;
     letter-spacing: 1px;
     padding: 20px;
+    color: $colort1;
     p{
         text-align: left;
     }
