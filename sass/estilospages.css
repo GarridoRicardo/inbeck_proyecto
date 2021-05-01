@@ -1233,7 +1233,7 @@ div #imagePP:hover {
 .m-content, .vi-content, .va-content {
   display: -ms-grid;
   display: grid;
-  padding: 5px;
+  padding: 35px 45px;
   height: auto;
   width: 100%;
   border: 1px solid black;
@@ -1241,12 +1241,15 @@ div #imagePP:hover {
 }
 
 .m-content h3, .vi-content h3, .va-content h3 {
-  padding: 3px 15px;
+  padding: 10px 15px;
   text-align: center;
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
 }
 
 .m-content p, .vi-content p, .va-content p {
-  padding: 3px 25px;
+  padding: 20px 10px;
   text-align: center;
   font-size: 16px;
   width: 100%;
@@ -1280,6 +1283,7 @@ div #imagePP:hover {
           justify-content: center;
   justify-items: center;
   width: 100%;
+  padding: 10px;
 }
 
 .e-content :hover {
