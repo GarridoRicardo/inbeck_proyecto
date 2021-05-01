@@ -117,10 +117,11 @@ margin-left: 1%;
 .carousel-item img {
     height: 70vh;
     object-fit: cover;
-    opacity: 0.85;
+    opacity: 0.9;
     position: relative;
     z-index: 1;
 }
+
 
 .carousel-indicators{
 	margin-bottom: 30px;
@@ -188,8 +189,24 @@ margin-left: 1%;
 		width: 60px;
 	}
 
+    .container__textos{
+        color: $colort1;
+        font-family: $famfuente2;
+        background-color: $colorbg4;
+        opacity: 0.8;
+        align-content: center;
+            h5{
+                font-size: 18px;
+                font-family: $famfuente1;
+                align-items: center;
+            }
+            p{
+                font-size: 14px;
+                font-family: $famfuente1;
+            }
+    }
   }
-
+  
 /*SECCION 3 - RESUMEN DE ACERCA DE*/	
 
 //Contenedor de Sección
@@ -220,7 +237,7 @@ margin-left: 1%;
     position: absolute;
     left:0;
     top:0;
-    height: $alto1;
+    height: 80vh;
     width: 100%;
     background-color:$colorbg0;
     z-index: -1;
@@ -241,6 +258,8 @@ margin-left: 1%;
         width: 100%;
     }
 }
+
+
 //Párrafo de Sección
 .pf-nosotros{
     display: flex;
@@ -383,7 +402,6 @@ margin-left: 1%;
         text-transform: uppercase;
         font-family: $famfuente1;
         justify-content: center;
-        background-color: white;
         h3{
             font-size: 20px;
             width: 50%;
