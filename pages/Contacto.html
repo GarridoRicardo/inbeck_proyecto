@@ -16,7 +16,7 @@
 		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
 	<!--Nuestro CSS-->
-	<link rel="stylesheet" type="text/css" href="../css/estilospages.css">
+	<link rel="stylesheet" type="text/css" href="../sass/estilospages.css">
 	<link rel="icon" href="../image/Logos/logo.png" alt="Logo Favicon">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -81,64 +81,82 @@
 			</nav>
 		</div>
 	</header>
-	
+
 	<!--Comienza el Contenedor de Contacto-->
-	<div class="c-contenedor container-fluid">
+	<div class="c-contenedor">
 		<!--Titulo Principal de la Pagina-->
-		<div>
+		<div class="t-contacto">
 			<h1>Contacto</h1>
 		</div>
-
+		<!--Formulario de Contacto-->
 		<div class="formulario">
-			<form>
-				<div class="form-group">
-					<label for="formGroupExampleInput">Nombre Completo</label>
-					<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre">
-				</div>
-				<div class="form-group">
-					<label for="formGroupExampleInput2">Apellido Completo</label>
-					<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Apellido">
-				</div>
-				<div class="form-group row">
-					<label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-					<div class="col-sm-10">
-						<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+			<form class="form-contenedor">
+				<!--Nombre y Apellido-->
+				<div class="row container">
+					<div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
+						<input type="text" class="form-control" id="formGroupExampleInput"
+							placeholder="Nombre Completo">
+					</div>
+					<div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
+						<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Apellido">
+					</div>
+					<!--Correo Electrónico-->
+					<div class="form-group col-sm-12 col-lg-12 col-xs-12">
+						<input type="email" class="form-control" id="inputEmail3" placeholder="Correo Electrónico">
+					</div>
+					<!--Area de Contacto-->
+					<div class="form-group col-lg-12 col-sm-12 col-xs-12">
+						<label for="formGroupExampleInput" class="col-form-label">Selecciones Sector</label>
+						<select class="custom-select">
+							<option selected="">Opciones</option>
+							<option value="1">Gerencia Técnica</option>
+							<option value="2">Gerencia Comercial</option>
+							<option value="3">Ingenieria</option>
+							<option value="4">Recursos Humanos</option>
+						</select>
+					</div>
+
+					<!--Mensaje o Comentario-->
+					<div class="form-group col-lg-12 col-sm-12 col-xs-12">
+						<label for="formGroupExampleInput" class="col-form-label">Mensaje o
+							Comentario</label>
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
 					</div>
 				</div>
 				<div>
-					<select class="custom-select">
-						<option selected="">Seleccione Sección</option>
-						<option value="1">Consultora</option>
-						<option value="2">Presupuestos</option>
-						<option value="3">Compras</option>
-						<option value="4">RRHH</option>
-					  </select>
-				</div>
-				<div>
-					<div class="form-group">
-						<label for="exampleFormControlTextarea1">Mensaje o Comentario</label>
-						<textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-					  </div>
-				</div>
-					<div class="custom-file">
-						<input type="file" class="custom-file-input" id="customFile">
-						<label class="custom-file-label" for="customFile">Adjunte CV</label>
-					  </div>
-					  <div class="form-check">
+				<div class="form-group container">
+					<!--Adjuntar archivo-->
+					<div>
+						<input type="file" class="form-control-file" id="exampleFormControlFile1">
+					</div>
+					<!--Aceptación de condiciones de politica de datos-->
+					  
+					<div class="form-check">
 						<input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled="">
 						<label class="form-check-label" for="disabledFieldsetCheck">
 							Acepto condiciones de política de privacidad del sitio web:
 							www.Inbeck.com.ar
 						</label>
 					</div>
-					<div>
-						<button type="submit" class="btn btn-primary">Enviar</button>
-						<input type="reset" class="btn btn-primary"></button>
+
+					<!--Botones-->
+					<div class="container btn-contacto">
+						<button type="submit" class="btn btn-outline-success">Enviar</button>
+						<input type="reset" class="btn btn-outline-danger"></button>
 					</div>
+				</div>
+
+				</div>
+
+
 			</form>
 		</div>
 	</div>
-
+	<div class="map-contenedor">
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5219.385992293268!2d-69.19457964021247!3d-38.9361931753225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf8f00e6236ec265c!2sInBeck%20S.R.L.!5e0!3m2!1ses!2sar!4v1619906802895!5m2!1ses!2sar"
+			width="100%" height="450" style="border: 2px; ;" allowfullscreen="" loading="lazy"></iframe>
+	</div>
 	<!--Sección 7 Pie de Pagina-->
 	<footer class="pieDePagina">
 		<div class="container contenedorFinal">
@@ -173,7 +191,7 @@
 				<div class="col-md-6">
 					<!--Imagen Corporativa de InBeck-->
 					<div class="imageCorp">
-						<img src="../image/inicio/footer.jpg" alt="Imagen Corporativa de la Empresa">
+						<img class="rounded" src="../image/inicio/footer.jpg" alt="Imagen Corporativa de la Empresa">
 					</div>
 
 				</div>
