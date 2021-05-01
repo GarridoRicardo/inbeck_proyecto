@@ -499,7 +499,7 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  background-image: url("../image/inicio/fondo_nosotros.jpg");
+  background-image: url("../image/inicio/nosotros/fondo_nosotros.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -673,7 +673,7 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  background-image: url("../image/inicio/enviecv.jpg");
+  background-image: url("../image/inicio/trabaje/enviecv.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
