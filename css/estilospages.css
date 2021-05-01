@@ -351,7 +351,7 @@ h1 {
   height: 70vh;
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: 0.85;
+  opacity: 0.9;
   position: relative;
   z-index: 1;
 }
@@ -453,6 +453,25 @@ h1 {
     height: 60px;
     width: 60px;
   }
+  .container__textos {
+    color: black;
+    font-family: "Opens Sans", sans-serif;
+    background-color: rgba(192, 219, 223, 0.952);
+    opacity: 0.8;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .container__textos h5 {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container__textos p {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+  }
 }
 
 /*SECCION 3 - RESUMEN DE ACERCA DE*/
@@ -480,7 +499,7 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  background-image: url("../image/inicio/fondo_nosotros.jpg");
+  background-image: url("../image/inicio/nosotros/fondo_nosotros.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -496,7 +515,7 @@ h1 {
   position: absolute;
   left: 0;
   top: 0;
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   background-color: #042A2B;
   z-index: -1;
@@ -654,7 +673,7 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  background-image: url("../image/inicio/enviecv.jpg");
+  background-image: url("../image/inicio/trabaje/enviecv.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -688,7 +707,6 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: white;
 }
 
 .t-trabaje h3 {
@@ -1109,7 +1127,7 @@ div #imagePP:hover {
 /*USANDO MIXIN...............*/
 /*Contenedor de Seccion Nuestra Historia*/
 .nh-content {
-  background-image: url("../image/acercade/aereo.jpg");
+  background-image: url("../image/nosotros/fondo_nosotros.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1123,6 +1141,7 @@ div #imagePP:hover {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  opacity: 1;
 }
 
 .nh-content::before {
@@ -1134,7 +1153,7 @@ div #imagePP:hover {
   width: 100%;
   background-color: #a1a9c0;
   z-index: -1;
-  opacity: 0.35;
+  opacity: 0.2;
 }
 
 /*Contenedor de Titulo*/
@@ -1147,6 +1166,9 @@ div #imagePP:hover {
 
 .nh-title h1 {
   font-size: 30px;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Montserrat", sans-serif;
 }
 
 /*Contenedor de Parrafo*/
@@ -1162,6 +1184,7 @@ div #imagePP:hover {
   font-family: "Montserrat" sans-serif;
   letter-spacing: 1px;
   text-align: justify;
+  color: white;
 }
 
 /*Media Queris para modificar el parrafo a medida que cambia el ancho*/
@@ -1178,6 +1201,7 @@ div #imagePP:hover {
     font-family: "Montserrat" sans-serif;
     letter-spacing: 1px;
     text-align: justify;
+    color: white;
   }
 }
 
@@ -1209,7 +1233,7 @@ div #imagePP:hover {
 .m-content, .vi-content, .va-content {
   display: -ms-grid;
   display: grid;
-  padding: 5px;
+  padding: 35px 45px;
   height: auto;
   width: 100%;
   border: 1px solid black;
@@ -1217,12 +1241,15 @@ div #imagePP:hover {
 }
 
 .m-content h3, .vi-content h3, .va-content h3 {
-  padding: 3px 15px;
+  padding: 10px 15px;
   text-align: center;
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
 }
 
 .m-content p, .vi-content p, .va-content p {
-  padding: 3px 25px;
+  padding: 20px 10px;
   text-align: center;
   font-size: 16px;
   width: 100%;
@@ -1256,6 +1283,7 @@ div #imagePP:hover {
           justify-content: center;
   justify-items: center;
   width: 100%;
+  padding: 10px;
 }
 
 .e-content :hover {
@@ -1276,10 +1304,6 @@ div #imagePP:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  justify-items: center;
 }
 
 .tabla-valores ul {
@@ -1288,18 +1312,10 @@ div #imagePP:hover {
 }
 
 .tabla-valores ul li {
-  height: 40px;
+  height: 25px;
   text-align: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  justify-items: center;
   background-color: transparent;
+  list-style: none;
 }
 
 /*APLICANDO SASS-OPERACIONES...............*/
@@ -1324,11 +1340,16 @@ div #imagePP:hover {
 }
 
 /*ESTILOS CONTACTO*/
-/*APLICO MIXIN...............*/
-/*Contenedor de Seccion Servicios*/
+/*APLICO MIXIN*/
+/*Contenedor de Seccion Contacto*/
 .c-contenedor {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: rgba(192, 219, 223, 0.952);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1336,22 +1357,87 @@ div #imagePP:hover {
   justify-items: center;
   z-index: 1;
   margin: 0;
-  padding: 0;
+  width: 100%;
 }
 
 .c-contenedor h1 {
   text-align: center;
+  padding-top: 30px;
+}
+
+.t-contacto {
+  height: auto;
+  position: relative;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.t-contacto h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: black;
+  font-family: "Montserrat", sans-serif;
 }
 
 .formulario {
-  width: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
   height: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
 }
 
-.formulario form {
-  -ms-flex-line-pack: center;
-      align-content: center;
-  justify-items: center;
+.form-contenedor {
+  padding: 0;
+}
+
+.form-group {
+  padding: 0px 50px;
+}
+
+.form-check {
+  padding: 0px 50px;
+}
+
+.btn-contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 100%;
+  padding: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn-contacto button {
+  padding: 0 50px;
+  margin: 5px 25px;
+}
+
+.btn-contacto input {
+  padding: 0 50px;
+  margin: 5px 25px;
+}
+
+.map-contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 20px 35px 80px;
+  background-color: rgba(192, 219, 223, 0.952);
 }
 
 /*SECCION 7 - FOOTER*/
@@ -1372,7 +1458,7 @@ div #imagePP:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 50vh;
+  padding: 50px 0px;
   width: 100%;
   justify-items: center;
   margin: 10px 0px;
