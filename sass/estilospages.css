@@ -1388,7 +1388,7 @@ div #imagePP:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 50vh;
+  padding: 50px 0px;
   width: 100%;
   justify-items: center;
   margin: 10px 0px;
