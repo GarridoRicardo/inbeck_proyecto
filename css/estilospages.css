@@ -50,10 +50,6 @@
   padding: 1px;
 }
 
-.menu li:hover > .submenu {
-  display: block;
-}
-
 .menu-bg:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
@@ -62,34 +58,21 @@
 }
 
 .masMenu-bg a:hover {
-  background-color: rgba(192, 219, 223, 0.952);
+  border-bottom: 1px solid black;
+  color: #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
-.bg-redes {
-  -webkit-filter: drop-shadow(1);
-          filter: drop-shadow(1);
+.nav-link:hover {
+  border-bottom: 1px solid black;
+  color: #fff !important;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
-/*ESTILOS PARA EL SUBMENU*/
-.submenu {
-  list-style: none;
-  display: block;
-  display: none;
-  background-color: transparent;
-  position: fixed;
-  font-size: 10px;
-  font-family: "Montserrat", sans-serif;
-  text-decoration: none;
-}
-
-.submenu li {
-  margin: 10px 0;
-  padding: 0 10px;
-}
-
-.btn-buscar {
-  color: black;
-  border: black solid 1px;
+.bg-redes a {
+  padding: 0 5px;
 }
 
 /*HEADER*/
@@ -109,6 +92,29 @@
     text-decoration: none;
     padding: 3px 25px;
   }
+}
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: #007bff;
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 1;
+  font-size: 16px;
+  border-radius: 50%;
+  right: 15px;
+  bottom: 15px;
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
+  z-index: 11;
+}
+
+.back-to-top i {
+  padding-top: 12px;
+  color: #fff;
 }
 
 /*APLICANDO SASS AL PROYECTO....................................................*/
@@ -1346,18 +1352,18 @@ div #imagePP:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   background-color: rgba(192, 219, 223, 0.952);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  justify-items: center;
   z-index: 1;
-  margin: 0;
-  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  width: auto;
 }
 
 .c-contenedor h1 {
@@ -1370,6 +1376,7 @@ div #imagePP:hover {
   position: relative;
   padding: 20px 0px;
   text-align: center;
+  width: 100%;
 }
 
 .t-contacto h1 {
@@ -1383,20 +1390,27 @@ div #imagePP:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 80vw;
   height: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   justify-items: center;
+  padding: 10px 10px;
 }
 
 .form-contenedor {
   padding: 0;
+  width: auto;
 }
 
 .form-group {
   padding: 0px 50px;
+  width: 100%;
 }
 
 .form-check {
@@ -1411,7 +1425,7 @@ div #imagePP:hover {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  width: 100%;
+  width: 80vw;
   padding: 50px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1436,8 +1450,9 @@ div #imagePP:hover {
   display: -ms-flexbox;
   display: flex;
   margin: 0;
-  padding: 20px 35px 80px;
+  padding: 20px;
   background-color: rgba(192, 219, 223, 0.952);
+  width: 75vw;
 }
 
 /*SECCION 7 - FOOTER*/
@@ -1459,7 +1474,6 @@ div #imagePP:hover {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 50px 0px;
-  width: 100%;
   justify-items: center;
   margin: 10px 0px;
   -webkit-box-align: center;
@@ -1543,7 +1557,11 @@ div #imagePP:hover {
 }
 
 .contenedorRedinf li {
-  padding: 10px;
+  padding: 0 15px;
+}
+
+.contenedorRedinf li a {
+  color: black;
 }
 
 .politica {
