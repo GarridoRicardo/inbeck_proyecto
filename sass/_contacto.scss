@@ -41,20 +41,21 @@
 .formulario{
     display: flex;
     flex-flow: row wrap;
-    width: auto;
+    width: 80vw;
     height: auto;
     justify-content: center;
     justify-items: center;
-    padding: 10px 50px;
+    padding: 10px 10px;
 }
 
 .form-contenedor{
     padding: 0;
-   
+    width: auto;
  }
 
  .form-group{
      padding: 0px 50px;
+     width: 100%;
  }
  .form-check{
     padding: 0px 50px;
@@ -65,7 +66,7 @@
  .btn-contacto{
      display: flex;
      flex-flow: row wrap;
-     width: 100%;
+     width: 80vw;
      padding: 50px;
      align-items: center;
      justify-content: center;
@@ -84,7 +85,7 @@
  .map-contenedor{
      display: flex;
      margin: 0;
-     padding: 20px 35px 80px;
+     padding: 20px;
      background-color: $colorbg4;
-     width: auto;
+     width: 75vw;
  }

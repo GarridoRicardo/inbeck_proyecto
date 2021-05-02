@@ -1388,21 +1388,23 @@ div #imagePP:hover {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  width: auto;
+  width: 80vw;
   height: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   justify-items: center;
-  padding: 10px 50px;
+  padding: 10px 10px;
 }
 
 .form-contenedor {
   padding: 0;
+  width: auto;
 }
 
 .form-group {
   padding: 0px 50px;
+  width: 100%;
 }
 
 .form-check {
@@ -1417,7 +1419,7 @@ div #imagePP:hover {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  width: 100%;
+  width: 80vw;
   padding: 50px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1442,9 +1444,9 @@ div #imagePP:hover {
   display: -ms-flexbox;
   display: flex;
   margin: 0;
-  padding: 20px 35px 80px;
+  padding: 20px;
   background-color: rgba(192, 219, 223, 0.952);
-  width: auto;
+  width: 75vw;
 }
 
 /*SECCION 7 - FOOTER*/
