@@ -1534,7 +1534,11 @@ div #imagePP:hover {
 }
 
 .contenedorRedinf li {
-  padding: 10px;
+  padding: 0 15px;
+}
+
+.contenedorRedinf li a {
+  color: black;
 }
 
 .politica {
