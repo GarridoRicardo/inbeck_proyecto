@@ -16,7 +16,7 @@
 		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
 	<!--Nuestro CSS-->
-	<link rel="stylesheet" type="text/css" href="../css/estilospages.css">
+	<link rel="stylesheet" type="text/css" href="../sass/estilospages.css">
 	<link rel="icon" href="../image/Logos/logo.png" alt="Logo Favicon">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -92,20 +92,20 @@
 		<div class="formulario">
 			<form class="form-contenedor">
 				<!--Nombre y Apellido-->
-				<div class="row container">
-					<div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div>
+					<div class="form-group">
 						<input type="text" class="form-control" id="formGroupExampleInput"
 							placeholder="Nombre Completo">
 					</div>
-					<div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="form-group">
 						<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Apellido">
 					</div>
 					<!--Correo Electrónico-->
-					<div class="form-group col-sm-12 col-lg-12 col-xs-12">
+					<div class="form-group">
 						<input type="email" class="form-control" id="inputEmail3" placeholder="Correo Electrónico">
 					</div>
 					<!--Area de Contacto-->
-					<div class="form-group col-lg-12 col-sm-12 col-xs-12">
+					<div class="form-group">
 						<label for="formGroupExampleInput" class="col-form-label">Selecciones Sector</label>
 						<select class="custom-select">
 							<option selected="">Opciones</option>
@@ -117,7 +117,7 @@
 					</div>
 
 					<!--Mensaje o Comentario-->
-					<div class="form-group col-lg-12 col-sm-12 col-xs-12">
+					<div class="form-group">
 						<label for="formGroupExampleInput" class="col-form-label">Mensaje o
 							Comentario</label>
 						<textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
@@ -126,19 +126,23 @@
 				<div>
 				<div class="form-group container">
 					<!--Adjuntar archivo-->
-					<div>
-						<input type="file" class="form-control-file" id="exampleFormControlFile1">
-					</div>
+					<div class="form-group">
+						<label for="exampleInputFile">Adjuntar Archivo</label>
+						<input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+						<small id="fileHelp" class="form-text text-muted">Puede adjuntar documentos en formatos PDF y JPG</small>
+					  </div>
 					<!--Aceptación de condiciones de politica de datos-->
-					  
-					<div class="form-check">
-						<input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled="">
-						<label class="form-check-label" for="disabledFieldsetCheck">
+					<div>
+					<fieldset class="form-group">
+						<div class="form-check">
+						  <label class="form-check-label">
+							<input class="form-check-input" type="checkbox" value="" checked="">
 							Acepto condiciones de política de privacidad del sitio web:
 							www.Inbeck.com.ar
-						</label>
+						  </label>
+						</div>
+					  </fieldset>
 					</div>
-
 					<!--Botones-->
 					<div class="container btn-contacto">
 						<button type="submit" class="btn btn-outline-success">Enviar</button>
@@ -152,6 +156,8 @@
 			</form>
 		</div>
 	</div>
+
+
 	<div class="map-contenedor">
 		<iframe
 			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5219.385992293268!2d-69.19457964021247!3d-38.9361931753225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf8f00e6236ec265c!2sInBeck%20S.R.L.!5e0!3m2!1ses!2sar!4v1619906802895!5m2!1ses!2sar"
@@ -159,9 +165,9 @@
 	</div>
 	<!--Sección 7 Pie de Pagina-->
 	<footer class="pieDePagina">
-		<div class="container contenedorFinal">
+		<div class="contenedorFinal">
 			<div class="row">
-				<div class="col-md-6 ">
+				<div class="col-md-6 col-sm-12">
 					<!--Logo Inbeck-->
 					<div class="imageLogo">
 						<img src="../image/logos/logo_2020.png" alt="Logo InBeck">
@@ -188,7 +194,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6 col-sm-12">
 					<!--Imagen Corporativa de InBeck-->
 					<div class="imageCorp">
 						<img class="rounded" src="../image/inicio/footer.jpg" alt="Imagen Corporativa de la Empresa">
