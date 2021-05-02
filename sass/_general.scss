@@ -45,12 +45,14 @@ $colorbg5: map-get($listabg, bg5);
         text-align: $alintext;
         line-height: $interlineado;
         z-index: 4;
+        padding: 10px 0 50px;
+       
             p{
-                font-size: 10px;
+                font-size: 16px;
                 line-height: 25px;
                 word-spacing: 5px;
-                margin: 1px;
-                padding: 5px
+                padding: 10px 0 50px;
+           
             }
             .description{
                 font-weight: $textnegrita;
@@ -59,6 +61,7 @@ $colorbg5: map-get($listabg, bg5);
                 line-height: 2rem;
                 word-spacing: 5px;
                 letter-spacing: 5px;
+ 
             }
            }
  /*Se aplica un Bucle al modificador de titulos*/          
@@ -96,14 +99,15 @@ h1{
         font-family:$famfuente1;
         text-align: $alintext;
         line-height: $interlineado;
-        z-index: 4;   
+        z-index: 4;  
+        padding: 10px 0 50px; 
  
          p{
-             font-size: 16px;
+             font-size: 20px;
              line-height: 25px;
              word-spacing: 5px;
              margin: 1px;
-             padding: 5px
+             padding: 10px 0 50px;
          }
 
         }
