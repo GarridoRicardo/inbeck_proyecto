@@ -13,6 +13,13 @@ $ancho2: 80%;
 $alto1: 100vh;
 $alto2: $alto1/2;
 
+//Colores de Redes/
+$facebook: #3b5999;
+$instagram: #e4485f;
+$linkedin: #0e76a8;
+$google:#3f729b;
+
+
 /*MAPS de Colores BG*/
 $listabg:(
    bg0:#042A2B,
@@ -68,9 +75,6 @@ $colorbg5: map-get($listabg, bg5);
     }
 }
 
-.menu li:hover>.submenu{
-    display: block;
-}
 
 .menu-bg:hover{
     transform: scale(1.05);  
@@ -78,34 +82,21 @@ $colorbg5: map-get($listabg, bg5);
 }
 
 .masMenu-bg a:hover {
-    background-color: $colorbg4; 
+    border-bottom: 1px solid black;
+    color:#fff;
+    transition: 0.2s;
 }
 
-.bg-redes{
-filter: drop-shadow(1); 
-
+.nav-link:hover {
+    border-bottom: 1px solid black;
+    color:#fff !important;
+    transition: 0.2s;
 }
 
-/*ESTILOS PARA EL SUBMENU*/
-
-.submenu{
-    list-style: none;
-    display: block;
-    display: none;
-    background-color: $colorbg5;
-    position: fixed;
-    font-size: 10px;
-    font-family: $famfuente1;
-    text-decoration: none;
-        li{    
-            margin: 10px 0;
-            padding: 0 10px;
-        }
-    }
-.btn-buscar{
-    color: $colort1;
-    border: $colort1 solid 1px;
+.bg-redes a{
+    padding: 0 5px;
 }
+
 
 /*HEADER*/
 /*APLICO MEDIA QUERIS EN HEADER DESDE CEL A TABLETS............*/

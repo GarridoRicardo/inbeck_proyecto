@@ -50,10 +50,6 @@
   padding: 1px;
 }
 
-.menu li:hover > .submenu {
-  display: block;
-}
-
 .menu-bg:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
@@ -62,34 +58,21 @@
 }
 
 .masMenu-bg a:hover {
-  background-color: rgba(192, 219, 223, 0.952);
+  border-bottom: 1px solid black;
+  color: #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
-.bg-redes {
-  -webkit-filter: drop-shadow(1);
-          filter: drop-shadow(1);
+.nav-link:hover {
+  border-bottom: 1px solid black;
+  color: #fff !important;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
-/*ESTILOS PARA EL SUBMENU*/
-.submenu {
-  list-style: none;
-  display: block;
-  display: none;
-  background-color: transparent;
-  position: fixed;
-  font-size: 10px;
-  font-family: "Montserrat", sans-serif;
-  text-decoration: none;
-}
-
-.submenu li {
-  margin: 10px 0;
-  padding: 0 10px;
-}
-
-.btn-buscar {
-  color: black;
-  border: black solid 1px;
+.bg-redes a {
+  padding: 0 5px;
 }
 
 /*HEADER*/
