@@ -1221,11 +1221,13 @@ div #imagePP:hover {
 .m-content, .vi-content, .va-content {
   display: -ms-grid;
   display: grid;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 35px 45px;
-  height: auto;
-  width: 100%;
   border: 1px solid black;
-  background-color: antiquewhite;
+  background-color: white;
 }
 
 .m-content h3, .vi-content h3, .va-content h3 {
@@ -1240,12 +1242,10 @@ div #imagePP:hover {
   padding: 20px 10px;
   text-align: center;
   font-size: 16px;
-  width: 100%;
 }
 
 .m-content ul li, .vi-content ul li, .va-content ul li {
   line-height: 25px;
-  width: 100%;
 }
 
 /*Contenedor de Mision Vision y Valores*/
@@ -1257,12 +1257,19 @@ div #imagePP:hover {
           align-items: center;
   justify-items: center;
   background-image: none;
-  height: auto;
-  width: 100%;
   z-index: 1;
+  width: auto;
+  height: 50vh;
+  margin-top: 30px;
 }
 
 /*Mision Contenido*/
+.m-content {
+  margin-bottom: 15px;
+  width: auto;
+  height: 100%;
+}
+
 .e-content {
   display: -ms-grid;
   display: grid;
@@ -1270,18 +1277,25 @@ div #imagePP:hover {
       -ms-flex-pack: center;
           justify-content: center;
   justify-items: center;
-  width: 100%;
-  padding: 10px;
+  width: auto;
 }
 
 .e-content :hover {
-  border: 2px solid antiquewhite;
+  border: 3px solid white;
 }
 
 /*Vision Contenido*/
+.vi-content {
+  margin-bottom: 15px;
+  width: auto;
+  height: 100%;
+}
+
 /*Valores Contenido*/
 .va-content {
-  margin: 0px;
+  width: auto;
+  height: 100%;
+  margin-bottom: 15px;
 }
 
 .va-content ul {
@@ -1292,6 +1306,8 @@ div #imagePP:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 15px;
+  height: 100%;
 }
 
 .tabla-valores ul {
@@ -1304,6 +1320,63 @@ div #imagePP:hover {
   text-align: center;
   background-color: transparent;
   list-style: none;
+}
+
+/* Mision Vision Valores
+--------------------------------*/
+#mvv {
+  padding: 70px 0;
+  background: #97b1a6;
+}
+
+#mvv .card {
+  background: #fff;
+  border-color: black;
+  border-radius: 10px;
+  margin: 0 15px;
+  padding: 15px 10px;
+  text-align: center;
+  color: black;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+#mvv .card:hover {
+  background: #97b1a6;
+  border-color: white;
+}
+
+#mvv .card i {
+  font-size: 60px;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  color: black;
+}
+
+#mvv .card i:hover {
+  color: white;
+}
+
+#mvv .card h6 {
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#mvv .card p {
+  font-size: 15px;
+  color: black;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+
+.lista ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
 }
 
 /*APLICANDO SASS-OPERACIONES...............*/
