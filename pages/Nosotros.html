@@ -16,7 +16,7 @@
 		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
 	<!--Nuestro CSS-->
-	<link rel="stylesheet" type="text/css" href="../css/estilospages.css">
+	<link rel="stylesheet" type="text/css" href="../sass/estilospages.css">
 	<link rel="icon" href="../image/Logos/logo.png" alt="Logo Favicon">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -109,57 +109,61 @@
 		</div>
 	</div>
 
-	<div class="mvv-content">
-		<div class="row">
-			<div class="m-content col-lg-4 rounded">
-				<div>
-					<h3>Misión</h3>
-				</div>
-				<div>
-					<p>Seguir siendo la provisión de servicios de ingeniería y topografía en el rubro Oil&Gas, con miras
-						a
-						la contribución del desarrollo sustentable y satisfacción del Cliente.</p>
-				</div>
-				<div class="e-content">
-					<img width="80px" src="../image/nosotros/mision.png" alt="Card image cap">
-				</div>
+<!--Sección de Misión Visión y Valores-->
 
+    <section id="mvv">
+		<div class="container-fluid">
+  		  <div class="row row-eq-height justify-content-center">
+			
+			<!--Misión-->
+  			<div class="col-lg-4 col-md-4 mb-4">
+			  <div class="card">
+				<i class="fas fa-align-left"></i>
+				<div class="card-body">
+				  <h6 class="card-title">Misión</h6>
+				  <p class="card-text">Seguir siendo la provisión de servicios de ingeniería y topografía en el rubro Oil&Gas, con miras
+					a
+					la contribución del desarrollo sustentable y satisfacción del Cliente.</p>
+				</div>
+			  </div>
 			</div>
-			<div class="vi-content col-lg-4 rounded">
-				<div>
-					<h3>Visión</h3>
-				</div>
-				<div>
-					<p>Desarrollar técnicas de trabajo acorde a la constante innovación tecnológica, sin dejar de lado
-						el
-						servicio de excelencia y los valores que hacen reconocida a la empresa en el rubro</p>
-				</div>
-				<div class="e-content">
-					<img width="80px" src="../image/nosotros/vision.png" alt="Card image cap">
-				</div>
-
+  
+			<!--Visión-->
+			<div class="col-lg-4 col-md-4 mb-4">
+			  <div class="card">
+				<i class="fas fa-chart-line"></i>
+				<div class="card-body">
+				  <h6 class="card-title">Visión</h6>
+				  <p class="card-text">Desarrollar técnicas de trabajo acorde a la constante innovación tecnológica, sin dejar de lado
+					el
+					servicio de excelencia y los valores que hacen reconocida a la empresa en el rubro.</p>
+  				</div>
+			  </div>
 			</div>
-			<div class="va-content col-lg-4 rounded">
-				<div>
-					<h3>Valores</h3>
+  
+			<!--Valores-->
+			<div class="col-lg-4 col-md-4 mb-4">
+			  <div class="card">
+				<i class="fas fa-award"></i>
+				<div class="card-body">
+				  <h6 class="card-title">Valores</h6>
+				  <div class="card-text lista text-center">
+					<ul>
+						<li>Profesionalismo</li>
+						<li>Innovación Tecnológica</li>
+						<li>Mejora Contínua</li>
+						<li>Sustentabilidad</li>
+						<li>Compromiso e Integridad</li>
+						</ul>
+				  </div>
 				</div>
-				<div class="tabla-valores container">
-					<ul class="list-group text-center">
-						<li class="list-item">Profesionalismo</li>
-						<li class="list-item">Innovación Tecnológica</li>
-						<li class="list-item">Mejora Contínua</li>
-						<li class="list-item">Sustentabilidad</li>
-						<li class="list-item">Compromiso e Integridad</li>
-					</ul>
-				</div>
-
-				<div class="e-content">
-					<img width="80px" src="../image/nosotros/valores.png" alt="Card image cap">
-				</div>
+			  </div>
 			</div>
+		  </div>
 		</div>
-	</div>
-
+	  </section>
+  <!-- Termina Sección de Misión VIsión y Valores -->
+  
 	<!--Sección 7 Pie de Pagina-->
 	<footer class="pieDePagina">
 		<div class="container contenedorFinal">
@@ -209,7 +213,6 @@
 			<h6>Aviso Legal</h6>
 		</div>
 	</footer>
-
 
 	<!--script Bootstrap de JS-->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

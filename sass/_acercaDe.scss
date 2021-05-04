@@ -101,24 +101,23 @@
 
 /*CONDICIONAL y EXTEND*/
 /*VARIABLE*/            
-$fondo-mvv: color1;
+$fondo-mvv: color2;
 /*EXTEND*/ 
 %mvv-descripcion {
     display: grid;
+    flex-direction: column;
     padding: 35px 45px;
-    height:auto;
-    width: 100%;
     border: 1px solid black;
+   
     @if ($fondo-mvv == color1) {
         background-color: antiquewhite;
     }@else if ($fondo-mvv == color2){
-        background-color: aquamarine;
+        background-color: white;
     }@else {
         background-color: pink;
     }
        
      h3{
-     
      padding: 10px 15px;
      text-align: center;
      letter-spacing: 2px;
@@ -129,50 +128,55 @@ $fondo-mvv: color1;
          padding: 20px 10px;
          text-align: center;
          font-size: 16px;
-         width: 100%;
     }
      ul li{
          line-height: 25px;
-         width: $ancho1;
      }
 }
 /*Contenedor de Mision Vision y Valores*/ 
+
 .mvv-content{
     display: grid;
     align-items: center;
     justify-items: center;
     background-image: none;
-    height: auto;
-    width: 100%;
     z-index: 1;
- }
+    width: auto;
+    height: 50vh; 
+    margin-top: 30px;
+}
 /*Mision Contenido*/ 
 .m-content{
     @extend %mvv-descripcion;
-    
+    margin-bottom: 15px;
+    width: auto;
+    height: 100%;
 }
 
 .e-content{
     display: grid;
     justify-content: center;
     justify-items: center;
-    width: 100%; 
-    padding: 10px;
+    width: auto;
     :hover{
-        border: 2px solid antiquewhite;
+        border: 3px solid white;
         
     }
 }
 
 /*Vision Contenido*/ 
 .vi-content{
-    @extend %mvv-descripcion;
-    
+    @extend %mvv-descripcion; 
+    margin-bottom: 15px;
+    width: auto;
+    height: 100%;
 }
 /*Valores Contenido*/ 
 .va-content{
    @extend %mvv-descripcion;
-   margin: 0px;
+   width: auto;
+   height: 100%;
+   margin-bottom: 15px;
    ul{
        padding: 0px;
    }
@@ -180,6 +184,8 @@ $fondo-mvv: color1;
 
 .tabla-valores{
     align-items: center;
+    margin-bottom: 15px;
+    height: 100%;
         ul {
             margin: 0;
             padding: 0;
@@ -191,3 +197,59 @@ $fondo-mvv: color1;
            }
         }
 }
+
+/* Mision Vision Valores
+--------------------------------*/
+#mvv {
+    padding: 70px 0;
+    background: #97b1a6;
+  }
+ 
+  
+  #mvv .card {
+    background: #fff;
+    border-color: black;
+    border-radius: 10px;
+    margin: 0 15px;
+    padding: 15px 10px;
+    text-align: center;
+    color: black;
+    transition: 0.3s ease-in-out;
+    height: 100%;
+    font-family: $famfuente1;
+  }
+  
+  #mvv .card:hover {
+    background: #97b1a6;
+    border-color: white;
+  }
+  
+  #mvv .card i {
+    font-size: 60px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    color: black;
+  }
+  #mvv .card i:hover{
+    color: white;
+  }
+  
+  #mvv .card h6 {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+ }
+  
+  #mvv .card p {
+    font-size: 15px;
+    color:black;
+    letter-spacing: 1px;
+    line-height: 20px;
+  }
+
+  .lista ul{
+      list-style: none;
+      text-align: center;
+      padding: 0;
+  }
