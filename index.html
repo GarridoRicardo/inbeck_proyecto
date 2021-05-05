@@ -19,57 +19,60 @@
 	<!--Nuestro CSS
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">-->
 
-	<link rel="stylesheet" type="text/css" href="css/estilospages.css">
+	<link rel="stylesheet" type="text/css" href="sass/estilospages.css">
 
 	<link rel="icon" href="image/logos/logo.png" alt="Logo Favicon">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/3087224d2e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 	<!--Sección - Cabecera-->
-	<header class="cabeceraContainer container-fluid">
+	<header class="contenedor-header">
 		<!--Comienza el Contenedor del Menu de Navegacion-->
 		<div class="container">
 			<!--Navegacion de menu de BS-->
 			<nav class="navbar navbar-expand-lg navbar-light menu text-center mr-auto ml-auto sticky-top">
 				<!--Logo de Empresa-->
-				<a class="navbar-brand menu-bg" href="index.html">
+				<a class="navbar-brand logo-bg" href="index.html">
 					<img style="width: 140px;" src="image/logos/logo_2020.png" class="d-inline-block align-top"
 						alt="Logo InBeck">
 				</a>
+				<!--Estilos del Boton-->
 				<button class="navbar-toggler" type="button" data-toggle="collapse"
 					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
 					aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
+					<i class="fas fa-crosshairs"></i>
 				</button>
-				<!--Paginas-->
+				<!--Menú-->
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mr-auto ml-auto">
-						<li class="nav-item active masMenu-bg">
+						<li class="nav-item active menu-bg">
 							<a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
 						</li>
-						<li class="nav-item active masMenu-bg">
+						<li class="nav-item active menu-bg">
 							<a class="nav-link" href="pages/Nosotros.html">Nosotros<span
 									class="sr-only">(current)</span></a>
 						</li>
-						<li class="nav-item active masMenu-bg">
+						<li class="nav-item active menu-bg">
 							<a class="nav-link" href="pages/Servicios.html">Servicios<span
 									class="sr-only">(current)</span></a>
 						</li>
-						<li class="nav-item active masMenu-bg">
+						<li class="nav-item active menu-bg">
 							<a class="nav-link" href="pages/Contacto.html">Contacto<span
 									class="sr-only">(current)</span></a>
 						</li>
-						<li class="nav-item active masMenu-bg">
+						<li class="nav-item active menu-bg">
 							<a class="nav-link" href="pages/Blog.html">Blog<span class="sr-only">(current)</span></a>
 						</li>
 					</ul>
 					<!--Contenedor de Redes sociales-->
-					<div class="masMenu-bg bg-redes">
+					<div class="menu-bg bg-redes">
 						<a href="https://www.facebook.com/Ingenieria.Topografia.Deteccion" target="_blank"
 							class="facebook"><i class="fab fa-facebook-f"></i></a>
 
@@ -87,9 +90,10 @@
 			</nav>
 		</div>
 	</header>
+
 	<!--Seccion 1 Portada-->
 	<div>
-		<div class="portadaContenedor">
+		<div class="contenedor-portada">
 			<div class="home titulos">
 				<h2 class="titulos titulos--h2">Bienvenidos a</h2>
 				<h1 class="titulos titulos--h1">INBECK SRL</h1>
@@ -100,9 +104,9 @@
 						- Cálculo de Estructuras
 					</p>
 				</div>
-
+				<!--Botones / Atajos-->
 				<div>
-					<ul class="contenedorBotones container-fluid">
+					<ul class="portada-btn container-fluid">
 						<li class="botones"><a href="pages/Servicios.html">SERVICIOS</a></li>
 						<li class="botones"><a href="pages/Blog.html">BLOG</a></li>
 					</ul>
@@ -110,11 +114,11 @@
 			</div>
 		</div>
 	</div>
-	</div>
+
 	<!--Sección 2 Resumen Servicios-->
-	<div class="resume">
+	<div class="resume-s">
 		<section>
-			<div class="tituloServicios">
+			<div class="titulo-resumen">
 				<h3>Nuestros Servicios</h3>
 			</div>
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -188,12 +192,12 @@
 
 	<!--Sección 3 Resumen Nosotros-->
 	<div class="c-nosotros">
-		<section  >
-			<div class="t-nosotros">
+		<section>
+			<div class="titulo-resumen">
 				<h3>Acerca de Nosotros</h3>
 			</div>
 			<div class="p-nosotros ">
-				<div class="pf-nosotros">
+				<div class="pf-section">
 					<p>
 						Somos una empresa Consultora de Ingeniería y Topografía con mas de 20 años al servicio
 						de la
@@ -204,8 +208,8 @@
 					</p>
 				</div>
 
-				<div class="btn-nosotros">
-					<div class="btn-nh">
+				<div class="btn-section">
+					<div class="btn-section-nh">
 						<a href="pages/Nosotros.html">NUESTRA HISTORIA</a>
 					</div>
 				</div>
@@ -217,20 +221,20 @@
 	<!--Sección 4 Trabaje con Nosotros-->
 	<div>
 		<section class="c-trabaje">
-			<div class="t-trabaje">
+			<div class="titulo-resumen">
 				<h3>Trabaje con Nosotros</h3>
 			</div>
 			<div class="p-trabaje">
-				<div class="pf-trabaje">
+				<div class="pf-section">
 					<p>
 						Búsqueda de Jóvenes Profesionales, Ingenieros Civil, Geólogos Agrimensores, Topógrafos, M.M.O
 						Programa de
 						Pasantías con la U.T.N F.R.N Y Facultad del Comahue
 					</p>
 				</div>
-				<div class="btn-trabaje">
-					<div class="btn-cv">
-						<a href="pages/Contacto.html">Envíe su CV</a>
+				<div class="btn-section">
+					<div class="btn-section-nh">
+						<a href="pages/Contacto.html">ENVÍE SU CV</a>
 					</div>
 				</div>
 			</div>
@@ -239,7 +243,7 @@
 
 	<!--Sección 5 Nuestros Clientes-->
 	<div>
-		<div class="tituloClientes">
+		<div class="titulo-resumen">
 			<h3>Nuestros Clientes</h3>
 		</div>
 		<section class="contenedorClientes">

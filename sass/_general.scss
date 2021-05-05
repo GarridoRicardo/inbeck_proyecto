@@ -6,6 +6,7 @@ $colort1: black ;
 $estfuente: normal;
 $famfuente1: 'Montserrat', sans-serif;
 $famfuente2: 'Opens Sans', sans-serif;
+$famfuente3: 'Itim', cursive;
 $interlineado: 1em;
 $anchofuente1: 400;
 $textnegrita: 800;
@@ -44,9 +45,7 @@ $colorbg5: map-get($listabg, bg5);
         font-family:$famfuente1;
         text-align: $alintext;
         line-height: $interlineado;
-        z-index: 4;
-        padding: 10px 0 50px;
-       
+        z-index: 4;  
             p{
                 font-size: 16px;
                 line-height: 25px;
@@ -74,9 +73,10 @@ $colorbg5: map-get($listabg, bg5);
 }
 
 h1{
-    
         animation-duration: 2s;
         animation-name: aparecer;
+        border-bottom: 3px solid white;
+        margin: 30px 0;
      }
      
      @keyframes aparecer {
@@ -100,9 +100,7 @@ h1{
         text-align: $alintext;
         line-height: $interlineado;
         z-index: 4;  
-        padding: 10px 0 50px; 
- 
-         p{
+        p{
              font-size: 20px;
              line-height: 25px;
              word-spacing: 5px;
@@ -117,5 +115,13 @@ h1{
                 font-size: 4rem/$i;
             }
         }
+
+        h1{
+            animation-duration: 2s;
+            animation-name: aparecer;
+            border-bottom: 3px solid white;
+            margin: 30px 0;
+         }
+         
     } 
 

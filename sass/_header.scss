@@ -40,14 +40,16 @@ $colorbg5: map-get($listabg, bg5);
 
 /*CONTENEDOR DEL HEADER............*/
 
-.cabeceraContainer{
+.contenedor-header{
+    margin: 0;
+    padding: 10px;
     display: flex;
     background-color: #97b1a6;
     position: sticky;
     top: 0px;
     height: auto;
     width: 100%;
-    z-index: 100;
+    z-index: 10;
 }
  
 /*CONTENEDOR DE MENU DE NAVEGACION*/
@@ -60,31 +62,40 @@ $colorbg5: map-get($listabg, bg5);
     list-style:none;
     position:sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 100;
     width: 100%;
     justify-items: center;
     align-items: center;
-    justify-content: center;
-        
+    justify-content: center; 
     a{
         color: $colort1;
         font-size: 16px;
         font-family: $famfuente1;
         text-decoration: none;
-        padding: 1px;
+        padding: 2px;
+        width: auto;
     }
 }
 
-
-.menu-bg:hover{
+.logo-bg{
+    margin:0;
+    padding: 2px;
+}
+.logo-bg:hover{
     transform: scale(1.05);  
-    transition: 0.75s;    
+    transition: 0.5s; 
 }
 
-.masMenu-bg a:hover {
-    border-bottom: 1px solid black;
+.menu-bg a{
+    border-bottom: 1px solid transparent;  
+    padding: 3px 0;
+    width: auto;
+}
+.menu-bg a:hover {
+    border-bottom: 1px solid white;
     color:#fff;
     transition: 0.2s;
+    width: auto;
 }
 
 .nav-link:hover {
@@ -115,7 +126,7 @@ $colorbg5: map-get($listabg, bg5);
             font-size: 14px;
             font-family: $famfuente1;
             text-decoration: none;
-            padding: 3px 25px;
+            padding: 5px 25px;
         }
     }
 
