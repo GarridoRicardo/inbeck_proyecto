@@ -699,7 +699,7 @@ h1 {
   }
   .titulo-resumen h3 {
     margin-top: 1px;
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 
@@ -1074,43 +1074,14 @@ div #imagePP:hover {
 }
 
 /*FIN DE MEDIA QUERIS*/
-/*APLICANDO SASS-OPERACIONES...............*/
 /*USANDO MIXIN...............*/
-/*Contenedor de Seccion Nuestra Historia*/
-.nh-content {
-  background-image: url("../image/nosotros/fondo_nosotros.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  opacity: 1;
-}
-
-.nh-content::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #a1a9c0;
-  z-index: -1;
-  opacity: 0.2;
-}
-
 /*Contenedor de Seccion Nosotrs*/
 .n-contenedor {
   display: -ms-grid;
   display: grid;
+  -ms-grid-rows: auto 80vh;
+      grid-template-rows: auto 80vh;
+  height: 100%;
   z-index: 1;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1140,59 +1111,114 @@ div #imagePP:hover {
   font-family: "Montserrat", sans-serif;
 }
 
+/*Contenedor de Seccion Nuestra Historia*/
+.nh-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  background-image: url("../image/nosotros/fondo_nosotros.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  min-height: 80vh;
+  width: 100vw;
+  z-index: 2;
+  opacity: 1;
+  margin: 0;
+  padding: 0px 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.nh-content::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  min-height: 80vh;
+  width: 100vw;
+  background-color: #a1a9c0;
+  z-index: -1;
+  opacity: 0.2;
+  padding: 0px 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /*Contenedor de Parrafo*/
 .nh-parrafo {
-  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  height: auto;
   width: 100%;
-  padding: 35px;
 }
 
 .nh-parrafo p {
-  font-size: 16px;
-  line-height: 48px;
+  font-size: 18px;
+  line-height: 45px;
   font-family: "Montserrat" sans-serif;
   letter-spacing: 1px;
   text-align: justify;
   color: white;
+  height: auto;
 }
 
 /*Media Queris para modificar el parrafo a medida que cambia el ancho*/
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .nh-parrafo {
-    height: 100%;
+    display: -ms-grid;
+    display: grid;
+    height: auto;
     width: 100%;
-    padding: 25px;
+    /*Ingreso el mixin*/
+  }
+  .nh-parrafo p {
+    font-size: 16px;
+    line-height: 37.5px;
+    font-family: "Montserrat" sans-serif;
+    letter-spacing: 1px;
+    text-align: left;
+    color: white;
+    height: auto;
+  }
+  .t-nosotros h1 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .nh-parrafo {
+    display: -ms-grid;
+    display: grid;
+    height: auto;
+    width: 100%;
     /*Ingreso el mixin*/
   }
   .nh-parrafo p {
     font-size: 14px;
-    line-height: 45px;
+    line-height: 25.5px;
     font-family: "Montserrat" sans-serif;
     letter-spacing: 1px;
-    text-align: justify;
-    color: white;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .nh-content {
+    text-align: left;
+    padding: 0;
+    margin: 0;
     height: auto;
   }
-  .nh-content::before {
-    height: auto;
-  }
-  .nh-parrafo {
-    height: auto;
-    width: 100%;
-    padding: 10px 15px;
-    /*Ingreso el mixin*/
-  }
-  .nh-parrafo p {
-    font-size: 12px;
-    line-height: 33px;
-    font-family: "Montserrat" sans-serif;
-    letter-spacing: 1px;
-    text-align: justify;
+  .t-nosotros h1 {
+    font-size: 18px;
   }
 }
 
@@ -1237,14 +1263,14 @@ div #imagePP:hover {
 }
 
 #mvv .card h6 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
 #mvv .card p {
-  font-size: 15px;
+  font-size: 16px;
   color: black;
   letter-spacing: 1px;
   line-height: 20px;
