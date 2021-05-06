@@ -1,50 +1,27 @@
-/*APLICANDO SASS-OPERACIONES...............*/
+
 /*USANDO MIXIN...............*/
 @mixin texto($alto, $interlineado, $fuente) {
     font-size: $alto;
     line-height: $interlineado*1.5;
     font-family: $fuente;    
 }
-/*Contenedor de Seccion Nuestra Historia*/
-    .nh-content{
-        background-image: url("../image/nosotros/fondo_nosotros.jpg");
-        background-repeat:no-repeat;
-        background-position:center;
-        background-size: cover;
-        background-attachment: fixed;
-        position:relative;
-        height: 100%;
-        width: $ancho1;
-        z-index: 1;
-        align-items: center;
-        align-content: center;
-        opacity: 1;
-    }
-    .nh-content::before {
-        content: '';
-        position: absolute;
-        left:0;
-        top:0;
-        height: 100%;
-        width: $ancho1;
-        background-color:rgb(161, 169, 192);
-        z-index: -1;
-        opacity: 0.2;
-    }
-/*Contenedor de Seccion Nosotrs*/
-    .n-contenedor{
-        display: grid;
-        z-index: 1;
-        align-items: center;
-        align-content: center;
-        margin: 0;
-        padding: 0;
-        h1{
-            text-align: center;
-        }
-    }
-    //Configuración de Titulo//
 
+/*Contenedor de Seccion Nosotrs*/
+.n-contenedor{
+    display: grid;
+    grid-template-rows: auto 80vh ;
+    height: 100%;
+    z-index: 1;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+       h1{
+        text-align: center;
+    }
+}
+
+ //Configuración de Titulo//
     .t-nosotros{
         height: auto;
         position:relative;
@@ -58,17 +35,53 @@
             font-family: $famfuente1; 
     }
     }
+/*Contenedor de Seccion Nuestra Historia*/
+    .nh-content{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        background-image: url("../image/nosotros/fondo_nosotros.jpg");
+        background-repeat:no-repeat;
+        background-position:center;
+        background-size: cover;
+        background-attachment: fixed;
+        position:relative;
+        height: max-content;
+        min-height: 80vh;
+        width: 100vw;
+        z-index: 2;
+        opacity: 1;
+        margin: 0;
+        padding: 0px 30px;
+        align-items: center;
+        align-content: center;
+    }
+    .nh-content::before {
+        content: '';
+        position: absolute;
+        left:0;
+        top:0;
+        height: max-content;
+        min-height: 80vh;
+        width: 100vw;
+        background-color:rgb(161, 169, 192);
+        z-index: -1;
+        opacity: 0.2;
+        padding: 0px 30px;
+        align-items: center;
+    }
+
+
 /*Contenedor de Parrafo*/
     .nh-parrafo{
-        height: 100%;
+        display: grid;
+        height: auto;
         width: $ancho1;
-        padding: 35px;
-                      
         p{
-            @include texto(16px,32px,'Montserrat'sans-serif);
+            @include texto(18px,30px,'Montserrat'sans-serif);
             letter-spacing: 1px;
             text-align:justify;
-            color: white;           
+            color: white;   
+            height: auto;        
         }
     }
 
@@ -76,40 +89,43 @@
 @media only screen and (min-width: 481px) and (max-width: 768px){
 
     .nh-parrafo{
-        height: 100%;
+        display: grid;
+        height: auto;
         width: $ancho1;
-        padding: 25px;
         /*Ingreso el mixin*/             
         p{
-            @include texto(14px,30px,'Montserrat'sans-serif);
+            @include texto(16px,25px,'Montserrat'sans-serif);
             letter-spacing: 1px;
-            text-align:justify;
-            color: white;       
+            text-align:left;
+            color: white; 
+            height: auto;       
         }
     }
+    .t-nosotros h1{
+            font-size: 20px;
+      }
 }
 
-@media only screen and (max-width: 480px){
+@media only screen and (min-width: 320px) and (max-width: 480px){
 
-    .nh-content{
-        height: auto;
-    }
-    .nh-content::before {
-        height: auto;
-    }
-
-
+ 
     .nh-parrafo{
+        display: grid;
         height: auto;
         width: $ancho1;
-        padding: 10px 15px;
-          /*Ingreso el mixin*/                        
+        /*Ingreso el mixin*/                        
         p{
-            @include texto(12px, 22px,'Montserrat'sans-serif);
+            @include texto(14px, 17px,'Montserrat'sans-serif);
             letter-spacing: 1px;
-            text-align:justify;
+            text-align:left;
+            padding: 0;
+            margin: 0;
+            height: auto; 
         }
     }
+    .t-nosotros h1{
+        font-size: 18px;
+  }
 }
 
 /*CONDICIONAL y EXTEND*/
@@ -183,14 +199,14 @@ $fondo-mvv: color2;
   }
   
   #mvv .card h6 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;
  }
   
   #mvv .card p {
-    font-size: 15px;
+    font-size: 16px;
     color:black;
     letter-spacing: 1px;
     line-height: 20px;
