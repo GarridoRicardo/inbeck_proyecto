@@ -16,7 +16,7 @@
 		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
 	<!--Nuestro CSS-->
-	<link rel="stylesheet" type="text/css" href="../css/estilospages.css">
+	<link rel="stylesheet" type="text/css" href="../sass/estilospages.css">
 	<link rel="icon" href="../image/Logos/logo.png" alt="Logo Favicon">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -37,10 +37,11 @@
 					<img style="width: 140px;" src="../image/logos/logo_2020.png" class="d-inline-block align-top"
 						alt="Logo InBeck">
 				</a>
+				<!--Estilos del Boton-->
 				<button class="navbar-toggler" type="button" data-toggle="collapse"
 					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
 					aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
+					<i class="fas fa-crosshairs"></i>
 				</button>
 				<!--Paginas-->
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -90,7 +91,7 @@
 			<h1>Contacto</h1>
 		</div>
 		<!--Formulario de Contacto-->
-		<div class="formulario">
+		<div class="container-fluid">
 			<form class="form-contenedor">
 				<!--Nombre y Apellido-->
 				<div>
@@ -101,13 +102,14 @@
 					<div class="form-group">
 						<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Apellido">
 					</div>
-					<!--Correo Electrónico-->
-					<div class="form-group">
-						<input type="email" class="form-control" id="inputEmail3" placeholder="Correo Electrónico">
-					</div>
-					<!--Area de Contacto-->
-					<div class="form-group">
-						<label for="formGroupExampleInput" class="col-form-label">Selecciones Sector</label>
+				</div>
+				<!--Correo Electrónico-->
+				<div class="form-group">
+					<input type="email" class="form-control" id="inputEmail3" placeholder="Correo Electrónico">
+				</div>
+				<!--Area de Contacto-->
+				<div class="form-group">
+					<label for="formGroupExampleInput" class="col-form-label">Selecciones Sector</label>
 						<select class="custom-select">
 							<option selected="">Opciones</option>
 							<option value="1">Gerencia Técnica</option>
@@ -115,49 +117,43 @@
 							<option value="3">Ingenieria</option>
 							<option value="4">Recursos Humanos</option>
 						</select>
-					</div>
-
-					<!--Mensaje o Comentario-->
-					<div class="form-group">
-						<label for="formGroupExampleInput" class="col-form-label">Mensaje o
+				</div>
+				<!--Mensaje o Comentario-->
+				<div class="form-group">
+					<label for="formGroupExampleInput" class="col-form-label">Mensaje o
 							Comentario</label>
-						<textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-					</div>
+					<textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
 				</div>
-				<div>
-				<div class="form-group container">
-
-					<!--Aceptación de condiciones de politica de datos-->
-					<div>
-					<fieldset class="form-group">
-						<div class="form-check">
-						  <label class="form-check-label">
-							<input class="form-check-input" type="checkbox" value="" checked="">
-							Acepto condiciones de política de privacidad del sitio web:
-							www.Inbeck.com.ar
-						  </label>
-						</div>
-					  </fieldset>
+				<!--Aceptación de condiciones de politica de datos-->
+				<div class="form-group">
+					<div class="section-politica">
+						<fieldset>
+							<div class="form-check">
+							  <label class="form-check-label">
+								<input class="form-check-input" type="checkbox" value="" checked="">
+								Acepto condiciones de política de privacidad del sitio web:
+								www.Inbeck.com.ar
+							  </label>
+							</div>
+						</fieldset>
 					</div>
+
+				</div>
 					<!--Botones-->
-					<div class="container btn-contacto">
-						<button type="submit" class="btn btn-outline-success">Enviar</button>
-						<input type="reset" class="btn btn-outline-danger"></button>
-					</div>
+				<div class="btn-section">
+						<button type="submit" class="botones">Enviar</button>
+						<input type="reset" class="botones"></input>
 				</div>
-
-				</div>
-
-
 			</form>
+		</div>
+		<div class="map-contenedor">
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5219.385992293268!2d-69.19457964021247!3d-38.9361931753225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf8f00e6236ec265c!2sInBeck%20S.R.L.!5e0!3m2!1ses!2sar!4v1619906802895!5m2!1ses!2sar"
+				width="100%" height="450" style="border: 2px; ;" allowfullscreen="" loading="lazy"></iframe>
 		</div>
 	</div>
 
-	<div class="map-contenedor">
-		<iframe
-			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5219.385992293268!2d-69.19457964021247!3d-38.9361931753225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf8f00e6236ec265c!2sInBeck%20S.R.L.!5e0!3m2!1ses!2sar!4v1619906802895!5m2!1ses!2sar"
-			width="100%" height="450" style="border: 2px; ;" allowfullscreen="" loading="lazy"></iframe>
-	</div>
+
 	<!--Sección 7 Pie de Pagina-->
 	<footer class="pieDePagina">
 		<div class="contenedorFinal">

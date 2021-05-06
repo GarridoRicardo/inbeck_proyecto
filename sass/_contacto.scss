@@ -9,85 +9,150 @@
 }
 /*Contenedor de Seccion Contacto*/
     .c-contenedor{
-        display: flex;
-        flex-flow: row wrap;
-        background: #97b1a6;
-        justify-content: center;
+        display: grid;
         z-index: 1;
-        margin: 0px;
-        padding: 0px;
+        align-items: center;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+        min-height: 80vh;
+        height: max-content;
         width: auto;
-         h1{
+        h1{
             text-align: center;
-            padding-top: 30px;
         }
     }
-
+ 
     
 //Configuración de Titulo//
 .t-contacto{
-        height: auto;
-        position:relative;
-        padding: 20px 0px ;
-        text-align: center;
-        width: 100%;
-        h1{
-            font-size: 30px;
-            text-transform: uppercase;
-            color: black;
-            font-family: $famfuente1;
-        
-    }
+    height: auto;
+    position:relative;
+    padding: 20px 0px ;
+    text-align: center;
+    width: auto;
+    h1{
+        font-size: 30px;
+        text-transform: uppercase;
+        color: black;
+        font-family: $famfuente1; 
+}
 }
 //Estilo del Formulario//
-.formulario{
-    display: flex;
-    flex-flow: row wrap;
-    width: 80vw;
+.container-fluid{
+    margin: 0;
+    padding: 0;
+    background: #97b1a6;
     height: auto;
-    justify-content: center;
-    justify-items: center;
-    padding: 10px 10px;
+    width: auto;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+
 }
 
+//Contenedor de formulario//
 .form-contenedor{
-    padding: 0;
-    width: auto;
+    margin: 0px;   
+    padding: 50px 40px;
+    height: auto;
+    width: 100vw;
+    text-align: center;
+    align-items: center;
+    align-content: center;
  }
 
+ //Aplicando Media queris para Responsive//
+ @media only screen and (min-width: 480px) and (max-width:767px) {
+    .form-contenedor{
+        padding: 50px 80px;
+     }
+} 
+@media only screen and (min-width: 768px) and (max-width:900px) {
+    .form-contenedor{
+        padding: 50px 150px;
+     }
+}
+ @media(min-width: 901px){
+    .form-contenedor{
+        padding: 50px 300px; 
+    }
+}   
+
+//Contenedor Celdas//
  .form-group{
-     padding: 0px 50px;
-     width: 100%;
+     width: auto;
+     justify-items: center;
  }
  .form-check{
-    padding: 0px 50px;
+    padding: 0px;
  }
 
+ .section-politica{
+     display: flex;
+     justify-content: center;
+     width: 100%;
+ }
  
  //Configuracion de los Botones Enviar y Restablecer//
- .btn-contacto{
-     display: flex;
-     flex-flow: row wrap;
-     width: 80vw;
-     padding: 50px;
-     align-items: center;
-     justify-content: center;
-     button{
-         padding: 0 50px;
-         margin: 5px 25px;
-     }
-     input{
-        padding: 0 50px;
+ 
+ .btn-section button{
+    color:$colort1;
+    border: solid 1px black;
+    font-family: $famfuente1;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 5px;
+    margin: 5px 25px;
+         input{
+        padding: 0px;
         margin: 5px 25px;
      }
+ }
+ .btn-section button:hover{
+    color: $colort0;
+    background-color:$colorbg1;
+    font-family: $famfuente1;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 5px;
+    margin: 5px 25px;
+    border: solid 1px white;
+    transition: 0.5s;
+ }
+
+ .btn-section input{
+    color:$colort1;
+    border: solid 1px black;
+    font-family: $famfuente1;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 5px;
+    margin: 5px 25px;
+}
+ 
+ .btn-section input:hover{
+    color: $colort0;
+    background-color:$colorbg1;
+    font-family: $famfuente1;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 5px;
+    margin: 5px 25px;
+    border: solid 1px white;
+    transition: 0.5s;
  }
 
  //Mapa de Ubicacion//
 
  .map-contenedor{
-     display: flex;
+     display: grid;
      margin: 0;
-     padding: 20px;
-     background-color: $colorbg4;
-     width: 75vw;
+     padding: 5px;
+     height: auto;
+     width: auto;
  }

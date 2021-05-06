@@ -1107,18 +1107,36 @@ div #imagePP:hover {
   opacity: 0.2;
 }
 
-/*Contenedor de Titulo*/
-.nh-title {
-  height: auto;
-  position: relative;
-  padding: 30px 0px 5px;
+/*Contenedor de Seccion Servicios*/
+.n-contenedor {
+  display: -ms-grid;
+  display: grid;
+  z-index: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.n-contenedor h1 {
   text-align: center;
 }
 
-.nh-title h1 {
+.t-nosotros {
+  height: auto;
+  position: relative;
+  padding: 20px 0px;
+  text-align: center;
+  width: 100%;
+}
+
+.t-nosotros h1 {
   font-size: 30px;
   text-transform: uppercase;
-  color: white;
+  color: black;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -1378,26 +1396,25 @@ div #imagePP:hover {
 /*APLICO MIXIN*/
 /*Contenedor de Seccion Contacto*/
 .c-contenedor {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  background: #97b1a6;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -ms-grid;
+  display: grid;
   z-index: 1;
-  margin: 0px;
-  padding: 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 0;
+  padding: 0;
+  min-height: 80vh;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   width: auto;
 }
 
 .c-contenedor h1 {
   text-align: center;
-  padding-top: 30px;
 }
 
 .t-contacto {
@@ -1405,7 +1422,7 @@ div #imagePP:hover {
   position: relative;
   padding: 20px 0px;
   text-align: center;
-  width: 100%;
+  width: auto;
 }
 
 .t-contacto h1 {
@@ -1415,73 +1432,130 @@ div #imagePP:hover {
   font-family: "Montserrat", sans-serif;
 }
 
-.formulario {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  width: 80vw;
+.container-fluid {
+  margin: 0;
+  padding: 0;
+  background: #97b1a6;
   height: auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  justify-items: center;
-  padding: 10px 10px;
+  width: auto;
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 }
 
 .form-contenedor {
-  padding: 0;
-  width: auto;
-}
-
-.form-group {
-  padding: 0px 50px;
-  width: 100%;
-}
-
-.form-check {
-  padding: 0px 50px;
-}
-
-.btn-contacto {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  width: 80vw;
-  padding: 50px;
+  margin: 0px;
+  padding: 50px 40px;
+  height: auto;
+  width: 100vw;
+  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
-.btn-contacto button {
-  padding: 0 50px;
-  margin: 5px 25px;
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .form-contenedor {
+    padding: 50px 80px;
+  }
 }
 
-.btn-contacto input {
-  padding: 0 50px;
-  margin: 5px 25px;
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+  .form-contenedor {
+    padding: 50px 150px;
+  }
 }
 
-.map-contenedor {
+@media (min-width: 901px) {
+  .form-contenedor {
+    padding: 50px 300px;
+  }
+}
+
+.form-group {
+  width: auto;
+  justify-items: center;
+}
+
+.form-check {
+  padding: 0px;
+}
+
+.section-politica {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.btn-section button {
+  color: black;
+  border: solid 1px black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 5px;
+  margin: 5px 25px;
+}
+
+.btn-section button input {
+  padding: 0px;
+  margin: 5px 25px;
+}
+
+.btn-section button:hover {
+  color: white;
+  background-color: #095b5d;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 5px;
+  margin: 5px 25px;
+  border: solid 1px white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn-section input {
+  color: black;
+  border: solid 1px black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 5px;
+  margin: 5px 25px;
+}
+
+.btn-section input:hover {
+  color: white;
+  background-color: #095b5d;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 5px;
+  margin: 5px 25px;
+  border: solid 1px white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.map-contenedor {
+  display: -ms-grid;
+  display: grid;
   margin: 0;
-  padding: 20px;
-  background-color: rgba(192, 219, 223, 0.952);
-  width: 75vw;
+  padding: 5px;
+  height: auto;
+  width: auto;
 }
 
 /*SECCION 7 - FOOTER*/
