@@ -1074,6 +1074,29 @@ div #imagePP:hover {
 }
 
 /*FIN DE MEDIA QUERIS*/
+/* Back to top button */
+.back-to-top {
+  position: fixed;
+  background: #97b1a6;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 1;
+  font-size: 30px;
+  border: 1px solid black;
+  right: 35px;
+  bottom: 35px;
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
+  z-index: 11;
+}
+
+.back-to-top i {
+  padding-top: 9px;
+  color: black;
+}
+
 /*USANDO MIXIN...............*/
 /*Contenedor de Seccion Nosotrs*/
 .n-contenedor {
@@ -1585,7 +1608,7 @@ div #imagePP:hover {
 }
 
 /*SECCION 7 - FOOTER*/
-.pieDePagina p {
+.pie-pagina p {
   color: black;
   text-align: left;
   font-weight: 500;
@@ -1597,18 +1620,25 @@ div #imagePP:hover {
           align-items: center;
 }
 
-.pieDePagina {
+.pie-pagina {
   position: relative;
+  background-color: #97b1a6;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   padding: 50px 0px;
   justify-items: center;
-  margin: 10px 0px;
+  margin: 0px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   z-index: 1;
+}
+
+.pie-pagina .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contenedorFinal {
@@ -1625,7 +1655,7 @@ div #imagePP:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 .imageLogo img {
@@ -1646,7 +1676,7 @@ div #imagePP:hover {
 }
 
 .imageCorp img {
-  width: 270px;
+  width: 80%;
 }
 
 .parrafoFooter h6 {
@@ -1701,14 +1731,74 @@ div #imagePP:hover {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   color: black;
-  margin-top: 25px;
+  background-color: #97b1a6;
   position: relative;
   text-align: center;
-  height: 100px;
+  height: auto;
   width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: solid 2px;
+}
+
+.politica p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: black;
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 40px;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 10px;
+}
+
+.footer-newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  color: black;
+  background-color: #97b1a6;
+  position: relative;
+  text-align: center;
+  height: auto;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-newsletter p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 10px;
 }
 /*# sourceMappingURL=estilospages.css.map */
