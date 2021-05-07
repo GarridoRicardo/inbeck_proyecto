@@ -8,7 +8,8 @@
 	<title>Blog</title>
 
 	<!--REGLAS DE SEO-->
-	<meta name="descripcion" content="Espacio para desarrollo de la topografia moderna medianta aerofotogrametria con Drone">
+	<meta name="descripcion"
+		content="Espacio para desarrollo de la topografia moderna medianta aerofotogrametria con Drone">
 	<meta name="keywords" content="ortofotogrametria, navegacion, DEM, VANTS, tecnologia, vuelo">
 
 	<!--CSS Bootstrap-->
@@ -16,7 +17,7 @@
 		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
 	<!--Nuestro CSS-->
-	<link rel="stylesheet" type="text/css" href="../css/estilospages.css">
+	<link rel="stylesheet" type="text/css" href="../sass/estilospages.css">
 	<link rel="icon" href="../image/Logos/logo.png" alt="Logo Favicon">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -83,112 +84,86 @@
 			</nav>
 		</div>
 	</header>
+
+	<!--Mi video-->
+	<video id="mi-video" src="../video/wingtraone.mp4" autoplay loop></video>
 	
-	<!--Encabezado del Blog-->
-	<div>
+	<!--Portada Blog-->
+	<div class="b-contenedor">
+			<div class="t-blog">
+				<h1>Nuestro Blog</h1>
+			</div>
+		<!--Seccion de Relevamiento - Relevamiento de Grandes Areas-->
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
+					<div class="articulo">
+						<article>
+							<h3>Relevamiento de Grandes Areas</h3>
+							<p>
+								La información de cada vuelo es posible manipularla luego de un arduo trabajo de post procesamiento, con el cual los datos brutos, arrojan una nube de puntos georreferenciada.<br>
+								Esto permite generar los MDE (Modelo Digital de Elevación) de alta precisión útiles para los Estudios de Riesgo Hídrico de las obras a ejecutar.
+							</p>
+						
+							<iframe class="video-ext" src="https://www.youtube.com/embed/KwkCgDMKTTs" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen>
+							</iframe>
+						</article>
+					</div>
+			</div>
+		</div>
 
-					<!-- Titulo de la Pagina -->
-					<div class="tituloBlog">
-						<h2 style="background-color: #45818E;">Blog</h2>
-						<h3>Aerofotogrametria - VANTS</h3>
-					</div>
-					<div class="portadaBlog">
-						<video width=100% src="video/WINGTRA.mp4" controls></video>
-					</div>
+		<!--Seccion de Relevamiento - Ortofotogrametria-->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 articulo">
+					<article>
+						<h3>Ortofotogrametría</h3>
+						<p style="color: black;">
+							El seguimiento fílmico de obra permite observar el desarrollo de los proyectos de una perspectiva global para la evaluación preventiva de mejoras, o bien para registro contínuo de la misma.<br>
+							Esta tarea le da valor agregado al máster de los desarrollos que las operadoras realizan para el control, inspección y comprensión de los mismos.<br>
+							Abajo, se muestra como queda definido un elemento de suelo relevado mediante esta tecnica.
+						</p>
+						<div class="image-aux">
+							<img src="../image/blog/galeria/3.jpg" alt="Fotogrametria">
+						</div>
+						
+					</article>
 				</div>
 			</div>
 		</div>
-		<div> <!--Seccion de Relevamiento - articulo de interes-->
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="articulo">
-								<article>
-									<h3>Relevamiento de Grandes Areas</h3>
-									<p>
-										Lorem Ipsum es simplemente texto de relleno de la industria de la impresión y la
-										composición
-										tipográfica. Lorem Ipsum ha sido el texto de relleno estándar de la industria
-										desde la década de 1500,
-										cuando un impresor desconocido tomó una galera de tipos y la mezcló para hacer
-										un libro de muestras
-										tipo. Ha sobrevivido no solo a cinco siglos, sino también al salto a la
-										composición tipográfica
-										electrónica, permaneciendo esencialmente sin cambios. Se popularizó en la década
-										de 1960 con el
-										lanzamiento de hojas de Letraset que contienen pasajes de Lorem Ipsum y, más
-										recientemente, con software
-										de autoedición como Aldus PageMaker que incluye versiones de Lorem Ipsum.
-									</p>
-								</article>
-							</div>
-							<div class="videoExterno">
-									<iframe src="https://www.youtube.com/embed/KwkCgDMKTTs" frameborder="0"
-										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-										allowfullscreen></iframe>
-							</div>
+
+		<!--Seccion de Navegación DEM-->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 articulo">
+					<article>
+						<h3>Navegación DEM</h3>
+						<p style="color: black;">
+							La cartografia ha desarrollado una evalución en la obtención de los datos brutos, si bien en Instituto Geográfico Nacional de la Republica Argentina, tiene modelos de elevación digita desarrollados en la cuenca, resulta conveniente en determinadas actividades relevar porciones de tierra para su evaluación a detalle. <br>
+							Actividades de esta naturaleza son la elaboración de Estudios de Riesgo Hidrico.
+						</p>
+						<div class="image-aux">
+							<img src="../image/blog/galeria/drone1.png" alt="Fotogrametria">
 						</div>
-					</div>
+						<p style="color: black;">
+							La Navegación DEM, nos permite la captura de imágenes en Yacimientos en explotación y Exploración.<br>
+							Parte del trabajo de un piloto vant es la habilidad para detectar zonas de dificl alcance para vehiculos, y focalizar la atención de las imagenes ahí.
+						</p>
+						<div class="image-aux">
+							<img src="../image/blog/galeria/yacimiento.jpg" alt="Fotogrametria">
+						</div>
+					</article>
 				</div>
+			</div>
 		</div>
-		<div> <!--Seccion de Relevamiento - articulo de interes-->
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<article>
-							<h3>Ortofotogrametría</h3>
-							<p style="color: black;">
-								Lorem Ipsum es simplemente texto de relleno de la industria de la impresión y la composición
-								tipográfica. Lorem Ipsum ha sido el texto de relleno estándar de la industria desde la década de
-								1500,
-								cuando un impresor desconocido tomó una galera de tipos y la mezcló para hacer un libro de
-								muestras
-								tipo. Ha sobrevivido no solo a cinco siglos, sino también al salto a la composición tipográfica
-								electrónica, permaneciendo esencialmente sin cambios. Se popularizó en la década de 1960 con el
-								lanzamiento de hojas de Letraset que contienen pasajes de Lorem Ipsum y, más recientemente, con
-								software
-								de autoedición como Aldus PageMaker que incluye versiones de Lorem Ipsum.
-							</p>
+	</div>
+	<div class="container text-center">
+		<a href="../pages/Error 404.html" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true">Enviá tu artículo</a>
+	</div>
+	
 
-						<article>
-							<h3>Navegación para DEM</h3>
-							<p style="color: black;">
-								Lorem Ipsum es simplemente texto de relleno de la industria de la impresión y la composición
-								tipográfica. Lorem Ipsum ha sido el texto de relleno estándar de la industria desde la década de
-								1500,
-								cuando un impresor desconocido tomó una galera de tipos y la mezcló para hacer un libro de muestras
-								tipo. Ha sobrevivido no solo a cinco siglos, sino también al salto a la composición tipográfica
-								electrónica, permaneciendo esencialmente sin cambios. Se popularizó en la década de 1960 con el
-								lanzamiento de hojas de Letraset que contienen pasajes de Lorem Ipsum y, más recientemente, con
-								software
-								de autoedición como Aldus PageMaker que incluye versiones de Lorem Ipsum.
-							</p>
-						</article>
-
-			</section>
-		</div>
-
-		<section>
-			<article>
-				<h3>Navegación para DEM</h3>
-				<p style="color: black;">
-					Lorem Ipsum es simplemente texto de relleno de la industria de la impresión y la composición
-					tipográfica. Lorem Ipsum ha sido el texto de relleno estándar de la industria desde la década de
-					1500,
-					cuando un impresor desconocido tomó una galera de tipos y la mezcló para hacer un libro de muestras
-					tipo. Ha sobrevivido no solo a cinco siglos, sino también al salto a la composición tipográfica
-					electrónica, permaneciendo esencialmente sin cambios. Se popularizó en la década de 1960 con el
-					lanzamiento de hojas de Letraset que contienen pasajes de Lorem Ipsum y, más recientemente, con
-					software
-					de autoedición como Aldus PageMaker que incluye versiones de Lorem Ipsum.
-				</p>
-
-			</article>
-
-		</section>
 	<!--Sección 7 Pie de Pagina-->
 	<footer class="pie-pagina">
 		<div class="container">
@@ -237,7 +212,8 @@
 				<!--Newsletter-->
 				<div class="col-lg-3 col-md-6 footer-newsletter">
 					<h5>Nuestro Newsletter</h5>
-					<p>Para poder suscribirte a nuestro newsletter mensual, dejanos tu mail y nos pondremos en contacto.
+					<p>Para poder suscribirte a nuestro newsletter mensual, dejanos tu mail y nos pondremos en
+						contacto.
 					</p>
 					<form action="" method="post">
 						<input type="email" name="email" placeholder="inbeck@copelnet.com.ar"><input type="submit"
