@@ -1,6 +1,6 @@
 /*SECCION 7 - FOOTER*/
 
-.pieDePagina p{
+.pie-pagina p{
     color: $colort1;
     text-align: left;
     font-weight: 500;
@@ -10,14 +10,18 @@
     align-items: center;
    
 }
-.pieDePagina{
+.pie-pagina{
     position: relative;
+    background-color: #97b1a6;
     justify-content: center;
     padding: 50px 0px;
     justify-items: center;
-    margin: 10px 0px;
+    margin: 0px;
     align-items: center;
     z-index: 1;
+    .row{ 
+        align-items: center;
+    }
 }
 
 .contenedorFinal{
@@ -28,7 +32,7 @@
     display: flex;
     align-content: center;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 0px;
     img{
         width: 180px;
     }
@@ -41,7 +45,7 @@
     background-size: contain;
     margin:5px;
     img{
-        width: 270px;
+        width: 80%;
 }
 }
 
@@ -81,11 +85,49 @@
 .politica{
     display: flex;
     flex-flow: column wrap;
+    align-content: center;
     justify-content: center;
     color:$colort1;
-    margin-top: 25px;
+    background-color: #97b1a6;
     position: relative;
     text-align: center;
-    height: 100px;
+    height: auto;
     width: 100%;
+    align-items: center;
+    border-top:solid 2px ;
+    p{
+        display: flex;
+        flex-direction: row;
+        color:$colort1;
+        text-align:center;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 40px;
+        font-family:$famfuente1;
+        padding-top: 10px;
+    }
+}
+.footer-newsletter{
+    display: flex;
+    flex-flow: column wrap;
+    color:$colort1;
+    background-color: #97b1a6;
+    position: relative;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    p{
+        display: flex;
+        flex-direction: row;
+        font-family: $famfuente1;
+        color:$colort1;
+        text-align:center;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        font-family:$famfuente1;
+        padding-top: 10px;
+    }
+
 }

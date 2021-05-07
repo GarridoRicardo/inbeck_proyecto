@@ -19,7 +19,7 @@
 	<!--Nuestro CSS
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">-->
 
-	<link rel="stylesheet" type="text/css" href="css/estilospages.css">
+	<link rel="stylesheet" type="text/css" href="sass/estilospages.css">
 
 	<link rel="icon" href="image/logos/logo.png" alt="Logo Favicon">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -31,7 +31,7 @@
 	<script src="https://kit.fontawesome.com/3087224d2e.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="top">
 	<!--Sección - Cabecera-->
 	<header class="contenedor-header">
 		<!--Comienza el Contenedor del Menu de Navegacion-->
@@ -259,10 +259,10 @@
 	</div>
 
 	<!--Sección 7 Pie de Pagina-->
-	<footer class="pieDePagina">
-		<div class="container contenedorFinal">
+	<footer class="pie-pagina">
+		<div class="container">
 			<div class="row">
-				<div class="col-md-6 col-sm-12">
+				<div class="col-lg-3 col-md-6">
 					<!--Logo Inbeck-->
 					<div class="imageLogo">
 						<img src="image/logos/logo_2020.png" alt="Logo InBeck">
@@ -270,8 +270,8 @@
 					<!--Datos de Ubiacion-->
 					<div class="parrafoFooter">
 						<h6>Avenida Mariano Moreno 336</h6>
-
-						<h6>Plaza Huincul - Provincia del Neuquén</h6>
+						<h6>Plaza Huincul - Prov. del Neuquén</h6>
+						<h6>inbeck@copelnet.com.ar </h6>
 					</div>
 					<!--redes sociales-->
 					<div class="contenedorRedinf">
@@ -287,31 +287,37 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-6 col-sm-12">
-					<!--Imagen Corporativa de InBeck-->
+				<!--Imagen Corporativa de InBeck-->
+				<div class="col-lg-3 col-md-6">
 					<div class="imageCorp">
 						<img class="rounded" src="image/inicio/footer.jpg" alt="Imagen Corporativa de la Empresa">
 					</div>
 				</div>
-			</div>
-		</div>
-		</div>
-		
-		<!--Politica de Privacidad-->
-		<div class="politica">
-			<div>
-				<h6>Copyright © 2021 InBeck SRL | RGarrido</h6>
-			</div>
-			<div>
-				<h6>Politica de Privacidad</h6>
-			</div>
-			<div>
-				<h6>Aviso Legal</h6>
+				<!--Copyright y Politica-->
+				<div class="col-lg-3 col-md-6">
+					<div class="politica">
+						<p>Copyright © 2021 InBeck SRL<br>
+							| RGarrido<br>
+							Politica de Privacidad<br>
+							Aviso Legal<br>
+						</p>
+					</div>
+				</div>
+				<!--Newsletter-->
+				<div class="col-lg-3 col-md-6 footer-newsletter">
+					<h5>Nuestro Newsletter</h5>
+					<p>Para poder suscribirte a nuestro newsletter mensual, dejanos tu mail y nos pondremos en contacto.
+					</p>
+					<form action="" method="post">
+						<input type="email" name="email" placeholder="inbeck@copelnet.com.ar"><input type="submit"
+							value="Suscribirse">
+					</form>
+				</div>
 			</div>
 		</div>
 	</footer>
 
-
+	<a href="#" class="back-to-top"><i class="fas fa-angle-double-up"></i></a>
 	<!--script Bootstrap de JS-->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -322,7 +328,5 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
 		integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
 		crossorigin="anonymous"></script>
-
 </body>
-
 </html>
