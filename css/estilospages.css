@@ -1417,7 +1417,7 @@ div #imagePP:hover {
 }
 
 #servicios .portfolio-item .portfolio-wrap .portfolio-info h4:hover {
-  color: darkblue;
+  color: black;
   text-decoration: none;
 }
 
@@ -1800,5 +1800,114 @@ div #imagePP:hover {
   line-height: 15px;
   font-family: "Montserrat", sans-serif;
   padding-top: 10px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+.b-contenedor {
+  display: -ms-grid;
+  display: grid;
+  z-index: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.b-contenedor h1 {
+  text-align: center;
+}
+
+.t-blog {
+  height: auto;
+  position: relative;
+  padding: 20px 0px;
+  text-align: center;
+  width: 100%;
+}
+
+.t-blog h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+
+#mi-video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+}
+
+.contenedor-blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 0px;
+  min-height: 80vh;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.video-ext {
+  display: -ms-grid;
+  display: grid;
+  min-height: 50vh;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 100%;
+}
+
+.image-aux img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  width: 100%;
+}
+
+.articulo {
+  padding-bottom: 50px;
+}
+
+.articulo p {
+  text-align: justify;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+
+.btn-primary {
+  margin: 50px;
+  width: 200px;
+  background-color: #97b1a6;
+  border-color: black;
+  color: black;
 }
 /*# sourceMappingURL=estilospages.css.map */
